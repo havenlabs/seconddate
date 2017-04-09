@@ -1,0 +1,1387 @@
+MD5					485a83b9175b50df214519d875b2ec93
+SHA256				d799ab9b616be179f24dbe8af6ff76ff9e56874f298dab9096854ea228fc0aeb
+SHA1				0a7830ff10a02c80dee8ddf1ceb13076d12b7d83
+File Name			Seconddate_CnC Download
+File Type			ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.9, stripped
+Analysis Date/Time	2017-04-09T09:08:57.821393
+CPU Platform		X86
+
+
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              EXEC (Executable file)
+  Machine:                           Intel 80386
+  Version:                           0x1
+  Entry point address:               0x80518c0
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          276864 (bytes into file)
+  Flags:                             0x0
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         8
+  Size of section headers:           40 (bytes)
+  Number of section headers:         25
+  Section header string table index: 24
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .interp           PROGBITS        08048134 000134 000013 00   A  0   0  1
+  [ 2] .note.ABI-tag     NOTE            08048148 000148 000020 00   A  0   0  4
+  [ 3] .hash             HASH            08048168 000168 001608 04   A  4   0  4
+  [ 4] .dynsym           DYNSYM          08049770 001770 003770 10   A  5   1  4
+  [ 5] .dynstr           STRTAB          0804cee0 004ee0 003683 00   A  0   0  1
+  [ 6] .gnu.version      VERSYM          08050564 008564 0006ee 02   A  4   0  2
+  [ 7] .gnu.version_r    VERNEED         08050c54 008c54 000070 00   A  5   2  4
+  [ 8] .rel.dyn          REL             08050cc4 008cc4 000030 08   A  4   0  4
+  [ 9] .rel.plt          REL             08050cf4 008cf4 0003e0 08   A  4  11  4
+  [10] .init             PROGBITS        080510d4 0090d4 000017 00  AX  0   0  4
+  [11] .plt              PROGBITS        080510ec 0090ec 0007d0 04  AX  0   0  4
+  [12] .text             PROGBITS        080518c0 0098c0 027acc 00  AX  0   0 16
+  [13] .fini             PROGBITS        0807938c 03138c 00001c 00  AX  0   0  4
+  [14] .rodata           PROGBITS        080793c0 0313c0 00eff4 00   A  0   0 32
+  [15] .eh_frame         PROGBITS        080883b4 0403b4 000004 00   A  0   0  4
+  [16] .ctors            PROGBITS        080893b8 0403b8 000008 00  WA  0   0  4
+  [17] .dtors            PROGBITS        080893c0 0403c0 000008 00  WA  0   0  4
+  [18] .jcr              PROGBITS        080893c8 0403c8 000004 00  WA  0   0  4
+  [19] .dynamic          DYNAMIC         080893cc 0403cc 0000d0 08  WA  5   0  4
+  [20] .got              PROGBITS        0808949c 04049c 000004 04  WA  0   0  4
+  [21] .got.plt          PROGBITS        080894a0 0404a0 0001fc 04  WA  0   0  4
+  [22] .data             PROGBITS        080896a0 0406a0 00320c 00  WA  0   0 32
+  [23] .bss              NOBITS          0808c8c0 0438c0 001644 00  WA  0   0 32
+  [24] .shstrtab         STRTAB          00000000 0438c0 0000be 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings)
+  I (info), L (link order), G (group), T (TLS), E (exclude), x (unknown)
+  O (extra OS processing required) o (OS specific), p (processor specific)
+
+There are no section groups in this file.
+
+Program Headers:
+  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
+  PHDR           0x000034 0x08048034 0x08048034 0x00100 0x00100 R E 0x4
+  INTERP         0x000134 0x08048134 0x08048134 0x00013 0x00013 R   0x1
+      [Requesting program interpreter: /lib/ld-linux.so.2]
+  LOAD           0x000000 0x08048000 0x08048000 0x403b8 0x403b8 R E 0x1000
+  LOAD           0x0403b8 0x080893b8 0x080893b8 0x034f4 0x04b4c RW  0x1000
+  DYNAMIC        0x0403cc 0x080893cc 0x080893cc 0x000d0 0x000d0 RW  0x4
+  NOTE           0x000148 0x08048148 0x08048148 0x00020 0x00020 R   0x4
+  GNU_STACK      0x000000 0x00000000 0x00000000 0x00000 0x00000 RW  0x4
+  LOOS+5041580   0x000000 0x00000000 0x00000000 0x00000 0x00000     0x4
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     
+   01     .interp 
+   02     .interp .note.ABI-tag .hash .dynsym .dynstr .gnu.version .gnu.version_r .rel.dyn .rel.plt .init .plt .text .fini .rodata .eh_frame 
+   03     .ctors .dtors .jcr .dynamic .got .got.plt .data .bss 
+   04     .dynamic 
+   05     .note.ABI-tag 
+   06     
+   07     
+
+Dynamic section at offset 0x403cc contains 21 entries:
+  Tag        Type                         Name/Value
+ 0x00000001 (NEEDED)                     Shared library: [libpthread.so.0]
+ 0x00000001 (NEEDED)                     Shared library: [libc.so.6]
+ 0x0000000c (INIT)                       0x80510d4
+ 0x0000000d (FINI)                       0x807938c
+ 0x00000004 (HASH)                       0x8048168
+ 0x00000005 (STRTAB)                     0x804cee0
+ 0x00000006 (SYMTAB)                     0x8049770
+ 0x0000000a (STRSZ)                      13955 (bytes)
+ 0x0000000b (SYMENT)                     16 (bytes)
+ 0x00000015 (DEBUG)                      0x0
+ 0x00000003 (PLTGOT)                     0x80894a0
+ 0x00000002 (PLTRELSZ)                   992 (bytes)
+ 0x00000014 (PLTREL)                     REL
+ 0x00000017 (JMPREL)                     0x8050cf4
+ 0x00000011 (REL)                        0x8050cc4
+ 0x00000012 (RELSZ)                      48 (bytes)
+ 0x00000013 (RELENT)                     8 (bytes)
+ 0x6ffffffe (VERNEED)                    0x8050c54
+ 0x6fffffff (VERNEEDNUM)                 2
+ 0x6ffffff0 (VERSYM)                     0x8050564
+ 0x00000000 (NULL)                       0x0
+
+Relocation section '.rel.dyn' at offset 0x8cc4 contains 6 entries:
+ Offset     Info    Type            Sym.Value  Sym. Name
+0808949c  00037506 R_386_GLOB_DAT    00000000   __gmon_start__
+0808c8c0  00017405 R_386_COPY        0808c8c0   stdout
+0808c8c4  00017905 R_386_COPY        0808c8c4   stderr
+0808c8c8  0002f305 R_386_COPY        0808c8c8   stdin
+0808c8cc  00031f05 R_386_COPY        0808c8cc   optarg
+0808c8d0  00036205 R_386_COPY        0808c8d0   optind
+
+Relocation section '.rel.plt' at offset 0x8cf4 contains 124 entries:
+ Offset     Info    Type            Sym.Value  Sym. Name
+080894ac  00000707 R_386_JUMP_SLOT   00000000   __mbrlen
+080894b0  00001707 R_386_JUMP_SLOT   00000000   nl_langinfo
+080894b4  00003207 R_386_JUMP_SLOT   00000000   towlower
+080894b8  00003707 R_386_JUMP_SLOT   00000000   sigaction
+080894bc  00003e07 R_386_JUMP_SLOT   00000000   strncat
+080894c0  00003f07 R_386_JUMP_SLOT   00000000   strchr
+080894c4  00004507 R_386_JUMP_SLOT   00000000   sigset
+080894c8  00004c07 R_386_JUMP_SLOT   00000000   feof
+080894cc  00005d07 R_386_JUMP_SLOT   00000000   getpid
+080894d0  00006507 R_386_JUMP_SLOT   00000000   __ctype_tolower_loc
+080894d4  00006607 R_386_JUMP_SLOT   00000000   nanosleep
+080894d8  00006b07 R_386_JUMP_SLOT   00000000   siglongjmp
+080894dc  00008007 R_386_JUMP_SLOT   00000000   write
+080894e0  00008107 R_386_JUMP_SLOT   00000000   localtime
+080894e4  00008307 R_386_JUMP_SLOT   00000000   recvfrom
+080894e8  00008407 R_386_JUMP_SLOT   00000000   fileno
+080894ec  00008907 R_386_JUMP_SLOT   00000000   strcmp
+080894f0  00008e07 R_386_JUMP_SLOT   00000000   close
+080894f4  00009807 R_386_JUMP_SLOT   00000000   perror
+080894f8  00009c07 R_386_JUMP_SLOT   00000000   fprintf
+080894fc  0000a407 R_386_JUMP_SLOT   00000000   getenv
+08089500  0000ab07 R_386_JUMP_SLOT   00000000   fflush
+08089504  0000c207 R_386_JUMP_SLOT   00000000   open64
+08089508  0000c707 R_386_JUMP_SLOT   00000000   select
+0808950c  0000d007 R_386_JUMP_SLOT   00000000   vsnprintf
+08089510  0000d107 R_386_JUMP_SLOT   00000000   setenv
+08089514  0000e307 R_386_JUMP_SLOT   00000000   tcsetattr
+08089518  0000e807 R_386_JUMP_SLOT   00000000   putchar
+0808951c  0000e907 R_386_JUMP_SLOT   00000000   setlocale
+08089520  0000ea07 R_386_JUMP_SLOT   00000000   getpwuid
+08089524  0000fa07 R_386_JUMP_SLOT   00000000   __errno_location
+08089528  00010307 R_386_JUMP_SLOT   00000000   ftell
+0808952c  00010b07 R_386_JUMP_SLOT   00000000   iswalnum
+08089530  00011407 R_386_JUMP_SLOT   00000000   wcrtomb
+08089534  00011a07 R_386_JUMP_SLOT   00000000   access
+08089538  00011f07 R_386_JUMP_SLOT   00000000   setvbuf
+0808953c  00012207 R_386_JUMP_SLOT   00000000   inet_ntoa
+08089540  00012607 R_386_JUMP_SLOT   00000000   random
+08089544  00012a07 R_386_JUMP_SLOT   00000000   puts
+08089548  00013407 R_386_JUMP_SLOT   00000000   cfgetospeed
+0808954c  00013b07 R_386_JUMP_SLOT   00000000   malloc
+08089550  00014507 R_386_JUMP_SLOT   00000000   strftime
+08089554  00014e07 R_386_JUMP_SLOT   00000000   fread
+08089558  00014f07 R_386_JUMP_SLOT   00000000   memmove
+0808955c  00015107 R_386_JUMP_SLOT   00000000   sendto
+08089560  00016207 R_386_JUMP_SLOT   00000000   strpbrk
+08089564  00017e07 R_386_JUMP_SLOT   00000000   abort
+08089568  00018307 R_386_JUMP_SLOT   00000000   __sigsetjmp
+0808956c  00018407 R_386_JUMP_SLOT   00000000   __xstat
+08089570  00018d07 R_386_JUMP_SLOT   00000000   inet_aton
+08089574  00019107 R_386_JUMP_SLOT   00000000   vfprintf
+08089578  00019807 R_386_JUMP_SLOT   00000000   fseek
+0808957c  00019f07 R_386_JUMP_SLOT   00000000   time
+08089580  0001ac07 R_386_JUMP_SLOT   00000000   getopt
+08089584  0001b107 R_386_JUMP_SLOT   00000000   fgets
+08089588  0001c307 R_386_JUMP_SLOT   00000000   fputs
+0808958c  0001c707 R_386_JUMP_SLOT   00000000   strstr
+08089590  0001c807 R_386_JUMP_SLOT   00000000   strlen
+08089594  0001c907 R_386_JUMP_SLOT   00000000   longjmp
+08089598  0001cf07 R_386_JUMP_SLOT   00000000   sigaddset
+0808959c  0001d707 R_386_JUMP_SLOT   00000000   iswupper
+080895a0  0001da07 R_386_JUMP_SLOT   00000000   __lxstat
+080895a4  0001df07 R_386_JUMP_SLOT   00000000   __strtol_internal
+080895a8  0001e107 R_386_JUMP_SLOT   00000000   qsort
+080895ac  0001e207 R_386_JUMP_SLOT   00000000   mbrtowc
+080895b0  00020507 R_386_JUMP_SLOT   00000000   getpwent
+080895b4  00020b07 R_386_JUMP_SLOT   00000000   sigprocmask
+080895b8  00020e07 R_386_JUMP_SLOT   00000000   strncmp
+080895bc  00021707 R_386_JUMP_SLOT   00000000   fputc
+080895c0  00023607 R_386_JUMP_SLOT   00000000   __libc_start_main
+080895c4  00024d07 R_386_JUMP_SLOT   00000000   realloc
+080895c8  00024f07 R_386_JUMP_SLOT   00000000   strcat
+080895cc  00025c07 R_386_JUMP_SLOT   00000000   towupper
+080895d0  00025e07 R_386_JUMP_SLOT   00000000   printf
+080895d4  00026107 R_386_JUMP_SLOT   00000000   bind
+080895d8  00026407 R_386_JUMP_SLOT   00000000   getuid
+080895dc  00026b07 R_386_JUMP_SLOT   00000000   fcntl
+080895e0  00026c07 R_386_JUMP_SLOT   00000000   memcpy
+080895e4  00027307 R_386_JUMP_SLOT   00000000   fclose
+080895e8  00027607 R_386_JUMP_SLOT   00000000   __ctype_toupper_loc
+080895ec  00027807 R_386_JUMP_SLOT   00000000   strrchr
+080895f0  00027d07 R_386_JUMP_SLOT   00000000   __strdup
+080895f4  00028007 R_386_JUMP_SLOT   00000000   getopt_long
+080895f8  00028a07 R_386_JUMP_SLOT   00000000   closedir
+080895fc  00028b07 R_386_JUMP_SLOT   00000000   gettimeofday
+08089600  00029507 R_386_JUMP_SLOT   00000000   strcoll
+08089604  00029707 R_386_JUMP_SLOT   00000000   opendir
+08089608  00029807 R_386_JUMP_SLOT   00000000   snprintf
+0808960c  00029a07 R_386_JUMP_SLOT   00000000   setpwent
+08089610  00029c07 R_386_JUMP_SLOT   00000000   open
+08089614  0002a607 R_386_JUMP_SLOT   00000000   endpwent
+08089618  0002aa07 R_386_JUMP_SLOT   00000000   sigemptyset
+0808961c  0002af07 R_386_JUMP_SLOT   00000000   strcasecmp
+08089620  0002b307 R_386_JUMP_SLOT   00000000   __ctype_get_mb_cur_max
+08089624  0002b707 R_386_JUMP_SLOT   00000000   tcflow
+08089628  0002bf07 R_386_JUMP_SLOT   00000000   getpwnam
+0808962c  0002c107 R_386_JUMP_SLOT   00000000   exit
+08089630  0002cc07 R_386_JUMP_SLOT   00000000   calloc
+08089634  0002d407 R_386_JUMP_SLOT   00000000   sscanf
+08089638  0002da07 R_386_JUMP_SLOT   00000000   _IO_putc
+0808963c  0002db07 R_386_JUMP_SLOT   00000000   free
+08089640  0002dd07 R_386_JUMP_SLOT   00000000   ioctl
+08089644  0002e807 R_386_JUMP_SLOT   00000000   iswlower
+08089648  0002ea07 R_386_JUMP_SLOT   00000000   isatty
+0808964c  0002ec07 R_386_JUMP_SLOT   00000000   memset
+08089650  0002f107 R_386_JUMP_SLOT   00000000   strncasecmp
+08089654  00030907 R_386_JUMP_SLOT   00000000   strncpy
+08089658  00030a07 R_386_JUMP_SLOT   00000000   lseek64
+0808965c  00031307 R_386_JUMP_SLOT   00000000   fopen
+08089660  00031707 R_386_JUMP_SLOT   00000000   _setjmp
+08089664  00031807 R_386_JUMP_SLOT   00000000   wcwidth
+08089668  00032707 R_386_JUMP_SLOT   00000000   strtok
+0808966c  00032a07 R_386_JUMP_SLOT   00000000   kill
+08089670  00033007 R_386_JUMP_SLOT   00000000   srandom
+08089674  00033d07 R_386_JUMP_SLOT   00000000   sprintf
+08089678  00033e07 R_386_JUMP_SLOT   00000000   fwrite
+0808967c  00034907 R_386_JUMP_SLOT   00000000   socket
+08089680  00034d07 R_386_JUMP_SLOT   00000000   readdir
+08089684  00035107 R_386_JUMP_SLOT   00000000   __ctype_b_loc
+08089688  00036307 R_386_JUMP_SLOT   00000000   sigdelset
+0808968c  00036807 R_386_JUMP_SLOT   00000000   tcgetattr
+08089690  00036a07 R_386_JUMP_SLOT   00000000   read
+08089694  00037507 R_386_JUMP_SLOT   00000000   __gmon_start__
+08089698  00037607 R_386_JUMP_SLOT   00000000   strcpy
+
+The decoding of unwind sections for machine type Intel 80386 is not currently supported.
+
+Symbol table '.dynsym' contains 887 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 0808d960     4 OBJECT  GLOBAL DEFAULT   23 _nc_tparm_err
+     2: 08065cb1   109 FUNC    GLOBAL DEFAULT   12 rl_kill_line
+     3: 080851e0   540 OBJECT  GLOBAL DEFAULT   14 _nc_capalias_table
+     4: 08059f30   179 FUNC    GLOBAL DEFAULT   12 rl_funmap_names
+     5: 0808c240     4 OBJECT  GLOBAL DEFAULT   22 _rl_enable_meta
+     6: 08069a33    59 FUNC    GLOBAL DEFAULT   12 _rl_free_history_entry
+     7: 00000000    67 FUNC    GLOBAL DEFAULT  UND __mbrlen@GLIBC_2.0 (2)
+     8: 0806a086    46 FUNC    GLOBAL DEFAULT   12 xmalloc
+     9: 080586e8   207 FUNC    GLOBAL DEFAULT   12 rl_vi_rubout
+    10: 0808db70     4 OBJECT  GLOBAL DEFAULT   23 SP
+    11: 0808c1cc     4 OBJECT  GLOBAL DEFAULT   22 rl_deprep_term_function
+    12: 08056c9a   184 FUNC    GLOBAL DEFAULT   12 rl_restore_state
+    13: 08071fa8   166 FUNC    GLOBAL DEFAULT   12 _nc_set_buffer
+    14: 0808cf0c     4 OBJECT  GLOBAL DEFAULT   23 rl_display_prompt
+    15: 0808ce24     4 OBJECT  GLOBAL DEFAULT   23 rl_ignore_some_completion
+    16: 0808ca8c     4 OBJECT  GLOBAL DEFAULT   23 rl_line_buffer
+    17: 0808c3c0  1208 OBJECT  GLOBAL DEFAULT   22 _nc_tinfo_fkeys
+    18: 0808cf08     4 OBJECT  GLOBAL DEFAULT   23 _rl_want_redisplay
+    19: 0806e768  4325 FUNC    GLOBAL DEFAULT   12 tparm
+    20: 0808cde8     4 OBJECT  GLOBAL DEFAULT   23 _rl_complete_mark_symlink
+    21: 0806a008    14 FUNC    GLOBAL DEFAULT   12 xfree
+    22: 08081120   180 OBJECT  GLOBAL DEFAULT   14 boolfnames
+    23: 00000000    96 FUNC    GLOBAL DEFAULT  UND nl_langinfo@GLIBC_2.0 (2)
+    24: 080769a2    27 FUNC    GLOBAL DEFAULT   12 _nc_visbuf
+    25: 08058240    95 FUNC    GLOBAL DEFAULT   12 rl_vi_check
+    26: 080791f0    85 FUNC    GLOBAL DEFAULT   12 _nc_find_type_entry
+    27: 08061bcc   125 FUNC    GLOBAL DEFAULT   12 _rl_erase_at_end_of_line
+    28: 08085400    84 OBJECT  GLOBAL DEFAULT   14 _nc_infoalias_table
+    29: 0808dbe4    12 OBJECT  GLOBAL DEFAULT   23 _nc_curr_token
+    30: 08061ba9    35 FUNC    GLOBAL DEFAULT   12 _rl_strip_prompt
+    31: 08059c42   196 FUNC    GLOBAL DEFAULT   12 rl_vi_complete
+    32: 080593ab   173 FUNC    GLOBAL DEFAULT   12 rl_vi_yank_to
+    33: 08067047   117 FUNC    GLOBAL DEFAULT   12 rl_ding
+    34: 080898dc    20 OBJECT  GLOBAL DEFAULT   22 state2Commands
+    35: 0805a945   173 FUNC    GLOBAL DEFAULT   12 rl_tty_unset_default_bind
+    36: 0806d445   117 FUNC    GLOBAL DEFAULT   12 _rl_get_char_len
+    37: 0808d908     1 OBJECT  GLOBAL DEFAULT   23 history_comment_char
+    38: 080658d0    74 FUNC    GLOBAL DEFAULT   12 rl_kill_text
+    39: 0805e7bb    17 FUNC    GLOBAL DEFAULT   12 rl_macro_dumper
+    40: 0808ca54     4 OBJECT  GLOBAL DEFAULT   23 rl_instream
+    41: 08060566    88 FUNC    GLOBAL DEFAULT   12 rl_read_init_file
+    42: 0808c244     4 OBJECT  GLOBAL DEFAULT   22 _rl_history_saved_point
+    43: 08061023    55 FUNC    GLOBAL DEFAULT   12 _rl_isearch_callback
+    44: 0806ddf0   142 FUNC    GLOBAL DEFAULT   12 tgetnum
+    45: 0808ce14     4 OBJECT  GLOBAL DEFAULT   23 rl_completer_quote_charac
+    46: 080670bc    30 FUNC    GLOBAL DEFAULT   12 rl_crlf
+    47: 0808cdf4     4 OBJECT  GLOBAL DEFAULT   23 rl_directory_rewrite_hook
+    48: 0806a174    34 FUNC    GLOBAL DEFAULT   12 next_history
+    49: 0805bcbc  1342 FUNC    GLOBAL DEFAULT   12 rl_filename_completion_fu
+    50: 00000000   100 FUNC    GLOBAL DEFAULT  UND towlower@GLIBC_2.0 (2)
+    51: 0805829f   515 FUNC    GLOBAL DEFAULT   12 rl_vi_match
+    52: 0806613a    41 FUNC    GLOBAL DEFAULT   12 _rl_with_macro_input
+    53: 0808ca9c     4 OBJECT  GLOBAL DEFAULT   23 _rl_output_meta_chars
+    54: 08068bb1    43 FUNC    GLOBAL DEFAULT   12 rl_rubout_or_delete
+    55: 00000000    76 FUNC    GLOBAL DEFAULT  UND sigaction@GLIBC_2.0 (3)
+    56: 08089840    80 OBJECT  GLOBAL DEFAULT   22 state0Commands
+    57: 0808991c     4 OBJECT  GLOBAL DEFAULT   22 rl_arg_sign
+    58: 0808ca6c     4 OBJECT  GLOBAL DEFAULT   23 rl_key_sequence_length
+    59: 0808c1f0     4 OBJECT  GLOBAL DEFAULT   22 rl_filename_quoting_funct
+    60: 0808def0     4 OBJECT  GLOBAL DEFAULT   23 history_max_entries
+    61: 080570fc   916 FUNC    GLOBAL DEFAULT   12 _rl_dispatch_subseq
+    62: 00000000   151 FUNC    GLOBAL DEFAULT  UND strncat@GLIBC_2.0 (2)
+    63: 00000000   359 FUNC    GLOBAL DEFAULT  UND strchr@GLIBC_2.0 (2)
+    64: 0808dda0     4 OBJECT  GLOBAL DEFAULT   23 rl_mark
+    65: 080723a8    22 FUNC    GLOBAL DEFAULT   12 has_key
+    66: 0805e815   433 FUNC    GLOBAL DEFAULT   12 rl_untranslate_keyseq
+    67: 08057b89    28 FUNC    GLOBAL DEFAULT   12 _rl_vi_set_last
+    68: 0806a10a    40 FUNC    GLOBAL DEFAULT   12 history_set_pos
+    69: 00000000   374 FUNC    GLOBAL DEFAULT  UND sigset@GLIBC_2.1 (4)
+    70: 0805aa38    61 FUNC    GLOBAL DEFAULT   12 _rl_restore_tty_signals
+    71: 0808b9c0  2056 OBJECT  GLOBAL DEFAULT   22 vi_insertion_keymap
+    72: 0806ceac    87 FUNC    GLOBAL DEFAULT   12 sh_unset_nodelay_mode
+    73: 08089930     4 OBJECT  GLOBAL DEFAULT   22 _rl_vi_last_command
+    74: 0806602e    52 FUNC    GLOBAL DEFAULT   12 rl_end_undo_group
+    75: 08066168   167 FUNC    GLOBAL DEFAULT   12 rl_call_last_kbd_macro
+    76: 00000000   132 FUNC    GLOBAL DEFAULT  UND feof@GLIBC_2.0 (2)
+    77: 08057feb   136 FUNC    GLOBAL DEFAULT   12 rl_vi_replace
+    78: 0805daf0    42 FUNC    GLOBAL DEFAULT   12 rl_set_keymap_from_edit_m
+    79: 0806e440   808 FUNC    GLOBAL DEFAULT   12 _nc_tparm_analyze
+    80: 0806f8de   133 FUNC    GLOBAL DEFAULT   12 delay_output
+    81: 0808b1a0  2056 OBJECT  GLOBAL DEFAULT   22 vi_movement_keymap
+    82: 0806a156    30 FUNC    GLOBAL DEFAULT   12 previous_history
+    83: 0808ce0c     4 OBJECT  GLOBAL DEFAULT   23 rl_completer_word_break_c
+    84: 0808ce28     4 OBJECT  GLOBAL DEFAULT   23 rl_filename_dequoting_fun
+    85: 080733fb   175 FUNC    GLOBAL DEFAULT   12 _nc_entry_match
+    86: 08066096   113 FUNC    GLOBAL DEFAULT   12 rl_modifying
+    87: 08069c79    24 FUNC    GLOBAL DEFAULT   12 rl_discard_argument
+    88: 080589f7   319 FUNC    GLOBAL DEFAULT   12 rl_vi_eword
+    89: 080612f8    15 FUNC    GLOBAL DEFAULT   12 rl_reverse_search_history
+    90: 0808dc18     4 OBJECT  GLOBAL DEFAULT   23 _nc_tracing
+    91: 08081060   180 OBJECT  GLOBAL DEFAULT   14 boolnames
+    92: 0808dda4     4 OBJECT  GLOBAL DEFAULT   23 rl_dispatching
+    93: 00000000    60 FUNC    GLOBAL DEFAULT  UND getpid@GLIBC_2.0 (2)
+    94: 080664fc    51 FUNC    GLOBAL DEFAULT   12 _rl_unget_char
+    95: 080893cc     0 OBJECT  GLOBAL DEFAULT  ABS _DYNAMIC
+    96: 08063675  5119 FUNC    GLOBAL DEFAULT   12 rl_redisplay
+    97: 080622dc   280 FUNC    GLOBAL DEFAULT   12 rl_show_char
+    98: 08064f31     8 FUNC    GLOBAL DEFAULT   12 _rl_digit_value
+    99: 0808d574     4 OBJECT  GLOBAL DEFAULT   23 rl_executing_macro
+   100: 0806c1bc  2676 FUNC    GLOBAL DEFAULT   12 history_expand
+   101: 00000000    56 FUNC    GLOBAL DEFAULT  UND __ctype_tolower_loc@GLIBC_2.3 (5)
+   102: 00000000   118 FUNC    GLOBAL DEFAULT  UND nanosleep@GLIBC_2.0 (3)
+   103: 0808d880     4 OBJECT  GLOBAL DEFAULT   23 _rl_terminal_can_insert
+   104: 0808ca68     4 OBJECT  GLOBAL DEFAULT   23 rl_already_prompted
+   105: 08072693    77 FUNC    GLOBAL DEFAULT   12 noqiflush
+   106: 08065a78   241 FUNC    GLOBAL DEFAULT   12 rl_unix_word_rubout
+   107: 00000000    35 FUNC    GLOBAL DEFAULT  UND siglongjmp@GLIBC_2.0 (3)
+   108: 0805fbcb    48 FUNC    GLOBAL DEFAULT   12 rl_bind_key_if_unbound_in
+   109: 08057e68    53 FUNC    GLOBAL DEFAULT   12 rl_vi_start_inserting
+   110: 08064aaa   313 FUNC    GLOBAL DEFAULT   12 rl_clear_signals
+   111: 0806e420    21 FUNC    GLOBAL DEFAULT   12 tgoto
+   112: 08076694    35 FUNC    GLOBAL DEFAULT   12 _nc_str_null
+   113: 08065fac    70 FUNC    GLOBAL DEFAULT   12 rl_revert_line
+   114: 08064e35    31 FUNC    GLOBAL DEFAULT   12 rl_reset_after_signal
+   115: 08089918     4 OBJECT  GLOBAL DEFAULT   22 rl_numeric_arg
+   116: 0805e533    73 FUNC    GLOBAL DEFAULT   12 rl_dump_variables
+   117: 08081320  1660 OBJECT  GLOBAL DEFAULT   14 strnames
+   118: 08070367   255 FUNC    GLOBAL DEFAULT   12 _nc_warning
+   119: 0806a44c   175 FUNC    GLOBAL DEFAULT   12 stifle_history
+   120: 0808def4     4 OBJECT  GLOBAL DEFAULT   23 max_input_history
+   121: 0806796d     5 FUNC    GLOBAL DEFAULT   12 rl_set_screen_size
+   122: 0806936b   217 FUNC    GLOBAL DEFAULT   12 _rl_overwrite_rubout
+   123: 0806a4fb    84 FUNC    GLOBAL DEFAULT   12 add_history_time
+   124: 08068724    65 FUNC    GLOBAL DEFAULT   12 rl_clear_screen
+   125: 08065340     3 FUNC    GLOBAL DEFAULT   12 rl_set_retained_kills
+   126: 0806167b   227 FUNC    GLOBAL DEFAULT   12 _rl_make_prompt_for_searc
+   127: 0805d935    50 FUNC    GLOBAL DEFAULT   12 rl_bind_key_in_map
+   128: 00000000   122 FUNC    GLOBAL DEFAULT  UND write@GLIBC_2.0 (3)
+   129: 00000000    50 FUNC    GLOBAL DEFAULT  UND localtime@GLIBC_2.0 (2)
+   130: 08068a85   257 FUNC    GLOBAL DEFAULT   12 rl_delete
+   131: 00000000   118 FUNC    GLOBAL DEFAULT  UND recvfrom@GLIBC_2.0 (3)
+   132: 00000000    48 FUNC    GLOBAL DEFAULT  UND fileno@GLIBC_2.0 (2)
+   133: 0808ca5c     4 OBJECT  GLOBAL DEFAULT   23 readline_echoing_p
+   134: 08068fb8   170 FUNC    GLOBAL DEFAULT   12 rl_insert_comment
+   135: 08067488  1101 FUNC    GLOBAL DEFAULT   12 _rl_init_terminal_io
+   136: 08069eae    93 FUNC    GLOBAL DEFAULT   12 _rl_arg_callback
+   137: 00000000    37 FUNC    GLOBAL DEFAULT  UND strcmp@GLIBC_2.0 (2)
+   138: 08061de1   214 FUNC    GLOBAL DEFAULT   12 _rl_update_final
+   139: 0806a0c0    57 FUNC    GLOBAL DEFAULT   12 history_set_history_state
+   140: 080586ac    13 FUNC    GLOBAL DEFAULT   12 rl_vi_first_print
+   141: 0808ca90     4 OBJECT  GLOBAL DEFAULT   23 rl_line_buffer_len
+   142: 00000000   111 FUNC    GLOBAL DEFAULT  UND close@GLIBC_2.0 (3)
+   143: 0808cf18     4 OBJECT  GLOBAL DEFAULT   23 _rl_vis_botlin
+   144: 08065dd2    76 FUNC    GLOBAL DEFAULT   12 rl_free_undo_list
+   145: 0806db46   492 FUNC    GLOBAL DEFAULT   12 rl_insert_close
+   146: 08069864   103 FUNC    GLOBAL DEFAULT   12 rl_overwrite_mode
+   147: 080793c0     4 OBJECT  GLOBAL DEFAULT   14 _fp_hw
+   148: 08070770    11 FUNC    GLOBAL DEFAULT   12 use_env
+   149: 0805d1d7   686 FUNC    GLOBAL DEFAULT   12 rl_menu_complete
+   150: 0808cf00     4 OBJECT  GLOBAL DEFAULT   23 rl_display_fixed
+   151: 0806a28c   117 FUNC    GLOBAL DEFAULT   12 history_total_bytes
+   152: 00000000   343 FUNC    GLOBAL DEFAULT  UND perror@GLIBC_2.0 (2)
+   153: 0808d56c     4 OBJECT  GLOBAL DEFAULT   23 _rl_undo_group_level
+   154: 0808cdf0     4 OBJECT  GLOBAL DEFAULT   23 rl_directory_completion_h
+   155: 08059716    55 FUNC    GLOBAL DEFAULT   12 rl_vi_column
+   156: 00000000    39 FUNC    GLOBAL DEFAULT  UND fprintf@GLIBC_2.0 (2)
+   157: 0808dda8     4 OBJECT  GLOBAL DEFAULT   23 rl_executing_keymap
+   158: 08076d16   281 FUNC    GLOBAL DEFAULT   12 _nc_init_entry
+   159: 080654d5    65 FUNC    GLOBAL DEFAULT   12 rl_yank
+   160: 0808ca4c     4 OBJECT  GLOBAL DEFAULT   23 rl_readline_state
+   161: 08070654    81 FUNC    GLOBAL DEFAULT   12 del_curterm
+   162: 0808ca48     4 OBJECT  GLOBAL DEFAULT   23 rl_explicit_arg
+   163: 0808cdfc     4 OBJECT  GLOBAL DEFAULT   23 rl_completion_entry_funct
+   164: 00000000   245 FUNC    GLOBAL DEFAULT  UND getenv@GLIBC_2.0 (2)
+   165: 0808c224     4 OBJECT  GLOBAL DEFAULT   22 rl_catch_signals
+   166: 0808c3ac     4 OBJECT  GLOBAL DEFAULT   22 _nc_check_termtype2
+   167: 0808c208    12 OBJECT  GLOBAL DEFAULT   22 _rl_possible_meta_prefixe
+   168: 0808ce20     4 OBJECT  GLOBAL DEFAULT   23 rl_filename_completion_de
+   169: 08066346   108 FUNC    GLOBAL DEFAULT   12 _rl_pop_executing_macro
+   170: 08057490    40 FUNC    GLOBAL DEFAULT   12 _rl_dispatch
+   171: 00000000   237 FUNC    GLOBAL DEFAULT  UND fflush@GLIBC_2.0 (2)
+   172: 0805794e   225 FUNC    GLOBAL DEFAULT   12 readline_internal_setup
+   173: 0805966d   169 FUNC    GLOBAL DEFAULT   12 rl_vi_delete_to
+   174: 0805a50a    47 FUNC    GLOBAL DEFAULT   12 rl_noninc_forward_search_
+   175: 08069444    95 FUNC    GLOBAL DEFAULT   12 rl_rubout
+   176: 08068898   193 FUNC    GLOBAL DEFAULT   12 rl_delete_horizontal_spac
+   177: 0808d570     4 OBJECT  GLOBAL DEFAULT   23 rl_undo_list
+   178: 0806d210   186 FUNC    GLOBAL DEFAULT   12 _rl_adjust_point
+   179: 0805a357   109 FUNC    GLOBAL DEFAULT   12 rl_history_search_backwar
+   180: 08057aac   134 FUNC    GLOBAL DEFAULT   12 readline
+   181: 0808ddac     4 OBJECT  GLOBAL DEFAULT   23 rl_done
+   182: 0805ed4a   279 FUNC    GLOBAL DEFAULT   12 rl_variable_bind
+   183: 08068bdc   291 FUNC    GLOBAL DEFAULT   12 rl_insert_text
+   184: 080686de    70 FUNC    GLOBAL DEFAULT   12 rl_refresh_line
+   185: 08057f3a    34 FUNC    GLOBAL DEFAULT   12 rl_vi_goto_mark
+   186: 0806a23f    77 FUNC    GLOBAL DEFAULT   12 history_get_history_state
+   187: 08056bb0    44 FUNC    GLOBAL DEFAULT   12 _rl_init_line_state
+   188: 0808d934     4 OBJECT  GLOBAL DEFAULT   23 tilde_expansion_preexpans
+   189: 08070564    78 FUNC    GLOBAL DEFAULT   12 _nc_doalloc
+   190: 08058073    21 FUNC    GLOBAL DEFAULT   12 rl_vi_eof_maybe
+   191: 08069c91    81 FUNC    GLOBAL DEFAULT   12 _rl_arg_overflow
+   192: 08089928     4 OBJECT  GLOBAL DEFAULT   22 _rl_convert_meta_chars_to
+   193: 0806a104     6 FUNC    GLOBAL DEFAULT   12 where_history
+   194: 00000000   202 FUNC    GLOBAL DEFAULT  UND open64@GLIBC_2.2 (6)
+   195: 0806de7e   126 FUNC    GLOBAL DEFAULT   12 tgetflag
+   196: 080662e1   101 FUNC    GLOBAL DEFAULT   12 _rl_kill_kbd_macro
+   197: 08071175    65 FUNC    GLOBAL DEFAULT   12 _nc_get_tty_mode
+   198: 0806d050    79 FUNC    GLOBAL DEFAULT   12 _rl_is_mbchar_matched
+   199: 00000000   146 FUNC    GLOBAL DEFAULT  UND select@GLIBC_2.0 (2)
+   200: 08076a50   438 FUNC    GLOBAL DEFAULT   12 _nc_add_to_try
+   201: 08060610    66 FUNC    GLOBAL DEFAULT   12 _rl_scxt_dispose
+   202: 0808dea0     4 OBJECT  GLOBAL DEFAULT   23 _rl_term_goto
+   203: 08062541   329 FUNC    GLOBAL DEFAULT   12 rl_on_new_line_with_promp
+   204: 0808db44     4 OBJECT  GLOBAL DEFAULT   23 _nc_curr_line
+   205: 08089940  2056 OBJECT  GLOBAL DEFAULT   22 emacs_standard_keymap
+   206: 0808dbd0     4 OBJECT  GLOBAL DEFAULT   23 _nc_syntax
+   207: 08066703    42 FUNC    GLOBAL DEFAULT   12 _rl_input_queued
+   208: 00000000   230 FUNC    GLOBAL DEFAULT  UND vsnprintf@GLIBC_2.0 (2)
+   209: 00000000   115 FUNC    GLOBAL DEFAULT  UND setenv@GLIBC_2.0 (2)
+   210: 080581cc   116 FUNC    GLOBAL DEFAULT   12 rl_vi_append_mode
+   211: 0808ddc0   156 OBJECT  GLOBAL DEFAULT   23 readline_top_level
+   212: 08064f39    49 FUNC    GLOBAL DEFAULT   12 _rl_savestring
+   213: 0806a196    39 FUNC    GLOBAL DEFAULT   12 history_get
+   214: 08058e90   110 FUNC    GLOBAL DEFAULT   12 rl_vi_prev_word
+   215: 08073216   380 FUNC    GLOBAL DEFAULT   12 _nc_read_entry_source
+   216: 0808de78     4 OBJECT  GLOBAL DEFAULT   23 funmap
+   217: 08061eb7   181 FUNC    GLOBAL DEFAULT   12 rl_restore_prompt
+   218: 080699d4    95 FUNC    GLOBAL DEFAULT   12 rl_maybe_replace_line
+   219: 08065966   274 FUNC    GLOBAL DEFAULT   12 rl_unix_filename_rubout
+   220: 08071002    44 FUNC    GLOBAL DEFAULT   12 _nc_unicode_locale
+   221: 0806d4ba   159 FUNC    GLOBAL DEFAULT   12 _rl_compare_chars
+   222: 0805c9dd   685 FUNC    GLOBAL DEFAULT   12 rl_display_match_list
+   223: 08079300     1 FUNC    GLOBAL DEFAULT   12 __libc_csu_fini
+   224: 08081280   160 OBJECT  GLOBAL DEFAULT   14 numfnames
+   225: 0806af25  1105 FUNC    GLOBAL DEFAULT   12 get_history_event
+   226: 0806d09f   126 FUNC    GLOBAL DEFAULT   12 _rl_char_value
+   227: 00000000   235 FUNC    GLOBAL DEFAULT  UND tcsetattr@GLIBC_2.0 (2)
+   228: 08064cee   327 FUNC    GLOBAL DEFAULT   12 rl_set_signals
+   229: 0808dea4     4 OBJECT  GLOBAL DEFAULT   23 _rl_term_ic
+   230: 08069d18   406 FUNC    GLOBAL DEFAULT   12 _rl_arg_dispatch
+   231: 0806995a   122 FUNC    GLOBAL DEFAULT   12 rl_maybe_save_line
+   232: 00000000   188 FUNC    GLOBAL DEFAULT  UND putchar@GLIBC_2.0 (2)
+   233: 00000000  1805 FUNC    GLOBAL DEFAULT  UND setlocale@GLIBC_2.0 (2)
+   234: 00000000   288 FUNC    GLOBAL DEFAULT  UND getpwuid@GLIBC_2.0 (2)
+   235: 0805a89b    25 FUNC    GLOBAL DEFAULT   12 rl_noninc_forward_search
+   236: 0808d938     4 OBJECT  GLOBAL DEFAULT   23 tilde_expansion_failure_h
+   237: 0807213a     5 FUNC    GLOBAL DEFAULT   12 _nc_rootname
+   238: 080679bc    36 FUNC    GLOBAL DEFAULT   12 rl_reset_screen_size
+   239: 08061367    49 FUNC    GLOBAL DEFAULT   12 rl_forced_update_display
+   240: 0805d967    27 FUNC    GLOBAL DEFAULT   12 rl_unbind_key
+   241: 080665cc    23 FUNC    GLOBAL DEFAULT   12 rl_clear_pending_input
+   242: 0808de80     4 OBJECT  GLOBAL DEFAULT   23 _rl_completion_case_fold
+   243: 080612eb    13 FUNC    GLOBAL DEFAULT   12 rl_forward_search_history
+   244: 0808cde4     4 OBJECT  GLOBAL DEFAULT   23 _rl_complete_show_unmodif
+   245: 0805fb9a    49 FUNC    GLOBAL DEFAULT   12 rl_bind_key_if_unbound
+   246: 080652a1    78 FUNC    GLOBAL DEFAULT   12 _rl_walphabetic
+   247: 0805a4db    47 FUNC    GLOBAL DEFAULT   12 rl_noninc_reverse_search_
+   248: 0808ce34     4 OBJECT  GLOBAL DEFAULT   23 rl_completion_suppress_qu
+   249: 0807350d  1054 FUNC    GLOBAL DEFAULT   12 _nc_resolve_uses2
+   250: 00000000    25 FUNC    GLOBAL DEFAULT  UND __errno_location@GLIBC_2.0 (3)
+   251: 08089900     4 OBJECT  GLOBAL DEFAULT   22 rl_library_version
+   252: 0808c2a0   256 OBJECT  GLOBAL DEFAULT   22 ttytype
+   253: 080694f0    72 FUNC    GLOBAL DEFAULT   12 rl_quoted_insert
+   254: 0805764d   180 FUNC    GLOBAL DEFAULT   12 _rl_internal_char_cleanup
+   255: 0806509b    76 FUNC    GLOBAL DEFAULT   12 rl_copy_text
+   256: 0808db3a     2 OBJECT  GLOBAL DEFAULT   23 ospeed
+   257: 08059053   856 FUNC    GLOBAL DEFAULT   12 rl_vi_domove
+   258: 080652ef    75 FUNC    GLOBAL DEFAULT   12 rl_alphabetic
+   259: 00000000   364 FUNC    GLOBAL DEFAULT  UND ftell@GLIBC_2.0 (2)
+   260: 0808db7c     4 OBJECT  GLOBAL DEFAULT   23 TABSIZE
+   261: 0808c23c     4 OBJECT  GLOBAL DEFAULT   22 _rl_term_autowrap
+   262: 08059e14    67 FUNC    GLOBAL DEFAULT   12 rl_vi_yank_arg
+   263: 0807db80   160 OBJECT  GLOBAL DEFAULT   14 numcodes
+   264: 08089908     4 OBJECT  GLOBAL DEFAULT   22 rl_gnu_readline_p
+   265: 0808ce00     4 OBJECT  GLOBAL DEFAULT   23 rl_attempted_completion_f
+   266: 080711f9    69 FUNC    GLOBAL DEFAULT   12 def_shell_mode
+   267: 00000000   180 FUNC    GLOBAL DEFAULT  UND iswalnum@GLIBC_2.0 (2)
+   268: 080766b7    31 FUNC    GLOBAL DEFAULT   12 _nc_str_copy
+   269: 080832a0  3980 OBJECT  GLOBAL DEFAULT   14 _nc_info_hash_table
+   270: 080701f8   253 FUNC    GLOBAL DEFAULT   12 _nc_err_abort
+   271: 0806abca   413 FUNC    GLOBAL DEFAULT   12 history_arg_extract
+   272: 08057c6e   176 FUNC    GLOBAL DEFAULT   12 rl_vi_bWord
+   273: 0808d940     4 OBJECT  GLOBAL DEFAULT   23 BC
+   274: 0806cf22     5 FUNC    GLOBAL DEFAULT   12 sh_get_env_value
+   275: 0808c234     4 OBJECT  GLOBAL DEFAULT   22 rl_getc_function
+   276: 00000000   557 FUNC    GLOBAL DEFAULT  UND wcrtomb@GLIBC_2.0 (2)
+   277: 08059b47   118 FUNC    GLOBAL DEFAULT   12 _rl_vi_done_inserting
+   278: 0808ca94     4 OBJECT  GLOBAL DEFAULT   23 _rl_kscxt
+   279: 0808c254     4 OBJECT  GLOBAL DEFAULT   22 history_word_delimiters
+   280: 08052130   131 FUNC    GLOBAL DEFAULT   12 cryptoSetup
+   281: 0808c910     4 OBJECT  GLOBAL DEFAULT   23 state3Commands
+   282: 00000000    61 FUNC    GLOBAL DEFAULT  UND access@GLIBC_2.0 (2)
+   283: 0808c214     4 OBJECT  GLOBAL DEFAULT   22 rl_readline_name
+   284: 08076c10   262 FUNC    GLOBAL DEFAULT   12 _nc_merge_entry
+   285: 0808c250     4 OBJECT  GLOBAL DEFAULT   22 history_no_expand_chars
+   286: 08065237    14 FUNC    GLOBAL DEFAULT   12 rl_tty_status
+   287: 00000000   379 FUNC    GLOBAL DEFAULT  UND setvbuf@GLIBC_2.0 (2)
+   288: 0805d9a5    70 FUNC    GLOBAL DEFAULT   12 rl_unbind_function_in_map
+   289: 0805d982    35 FUNC    GLOBAL DEFAULT   12 rl_unbind_key_in_map
+   290: 00000000   302 FUNC    GLOBAL DEFAULT  UND inet_ntoa@GLIBC_2.0 (2)
+   291: 08068cff   389 FUNC    GLOBAL DEFAULT   12 rl_transpose_chars
+   292: 0806d5f6   433 FUNC    GLOBAL DEFAULT   12 tilde_expand_word
+   293: 08071116    95 FUNC    GLOBAL DEFAULT   12 reset_prog_mode
+   294: 00000000   103 FUNC    GLOBAL DEFAULT  UND random@GLIBC_2.0 (2)
+   295: 0806a0f9    11 FUNC    GLOBAL DEFAULT   12 using_history
+   296: 08051bb0  1394 FUNC    GLOBAL DEFAULT   12 sendCommand
+   297: 0806144b    62 FUNC    GLOBAL DEFAULT   12 _rl_current_display_line
+   298: 00000000   390 FUNC    GLOBAL DEFAULT  UND puts@GLIBC_2.0 (2)
+   299: 080510d4     0 FUNC    GLOBAL DEFAULT   10 _init
+   300: 08069c19    33 FUNC    GLOBAL DEFAULT   12 rl_beginning_of_history
+   301: 08077c82   608 FUNC    GLOBAL DEFAULT   12 _nc_align_termtype
+   302: 0808c1d0     4 OBJECT  GLOBAL DEFAULT   22 _rl_complete_mark_directo
+   303: 0805c1fa   316 FUNC    GLOBAL DEFAULT   12 rl_username_completion_fu
+   304: 08069829    10 FUNC    GLOBAL DEFAULT   12 _rl_set_insert_mode
+   305: 08058f72    42 FUNC    GLOBAL DEFAULT   12 _rl_vi_textmod_command
+   306: 0806cf27   153 FUNC    GLOBAL DEFAULT   12 sh_set_lines_and_columns
+   307: 0808dea8     4 OBJECT  GLOBAL DEFAULT   23 _rl_term_clreol
+   308: 00000000    13 FUNC    GLOBAL DEFAULT  UND cfgetospeed@GLIBC_2.0 (2)
+   309: 08067ffb     5 FUNC    GLOBAL DEFAULT   12 rl_forward
+   310: 0808d90c     4 OBJECT  GLOBAL DEFAULT   23 history_quotes_inhibit_ex
+   311: 080726e0   117 FUNC    GLOBAL DEFAULT   12 nocbreak
+   312: 08069fab    91 FUNC    GLOBAL DEFAULT   12 rl_digit_argument
+   313: 0806816f   294 FUNC    GLOBAL DEFAULT   12 rl_backward_word
+   314: 0808c3a8     1 OBJECT  GLOBAL DEFAULT   22 _nc_user_definable
+   315: 00000000   371 FUNC    GLOBAL DEFAULT  UND malloc@GLIBC_2.0 (2)
+   316: 0805abb7    67 FUNC    GLOBAL DEFAULT   12 rltty_set_default_binding
+   317: 08058643   105 FUNC    GLOBAL DEFAULT   12 rl_vi_back_to_indent
+   318: 0805e57c    93 FUNC    GLOBAL DEFAULT   12 rl_variable_value
+   319: 0808ca50     4 OBJECT  GLOBAL DEFAULT   23 rl_last_func
+   320: 0807258d    61 FUNC    GLOBAL DEFAULT   12 idcok
+   321: 0807031f    72 FUNC    GLOBAL DEFAULT   12 _nc_set_type
+   322: 08065014    25 FUNC    GLOBAL DEFAULT   12 _rl_qsort_string_compare
+   323: 0808ce30     4 OBJECT  GLOBAL DEFAULT   23 rl_completion_suppress_ap
+   324: 0808c258     4 OBJECT  GLOBAL DEFAULT   22 tilde_additional_prefixes
+   325: 00000000    69 FUNC    GLOBAL DEFAULT  UND strftime@GLIBC_2.0 (2)
+   326: 080620b4   296 FUNC    GLOBAL DEFAULT   12 rl_expand_prompt
+   327: 0805dd4e    73 FUNC    GLOBAL DEFAULT   12 rl_get_keymap_by_name
+   328: 0808d54c     4 OBJECT  GLOBAL DEFAULT   23 _rl_allow_pathname_alphab
+   329: 0805aabc   161 FUNC    GLOBAL DEFAULT   12 _rl_disable_tty_signals
+   330: 0805d85f   105 FUNC    GLOBAL DEFAULT   12 rl_complete
+   331: 08066fd8    61 FUNC    GLOBAL DEFAULT   12 _rl_control_keypad
+   332: 080725ca    94 FUNC    GLOBAL DEFAULT   12 idlok
+   333: 0805ce8b   844 FUNC    GLOBAL DEFAULT   12 _rl_find_completion_word
+   334: 00000000   269 FUNC    GLOBAL DEFAULT  UND fread@GLIBC_2.0 (2)
+   335: 00000000    88 FUNC    GLOBAL DEFAULT  UND memmove@GLIBC_2.0 (2)
+   336: 0808cddc     4 OBJECT  GLOBAL DEFAULT   23 rl_completion_display_mat
+   337: 00000000   118 FUNC    GLOBAL DEFAULT  UND sendto@GLIBC_2.0 (3)
+   338: 08076784    23 FUNC    GLOBAL DEFAULT   12 unctrl
+   339: 0808c278     4 OBJECT  GLOBAL DEFAULT   22 rl_blink_matching_paren
+   340: 0806083a  1926 FUNC    GLOBAL DEFAULT   12 _rl_isearch_dispatch
+   341: 0808d7c0     4 OBJECT  GLOBAL DEFAULT   23 _rl_callback_func
+   342: 08074ee9  6019 FUNC    GLOBAL DEFAULT   12 _nc_parse_entry
+   343: 0808c1ec     4 OBJECT  GLOBAL DEFAULT   22 rl_filename_quoting_desir
+   344: 08067972    74 FUNC    GLOBAL DEFAULT   12 rl_resize_terminal
+   345: 08067e04    77 FUNC    GLOBAL DEFAULT   12 rl_char_search
+   346: 0808cf10     4 OBJECT  GLOBAL DEFAULT   23 _rl_last_c_pos
+   347: 0808ca7c     4 OBJECT  GLOBAL DEFAULT   23 rl_terminal_name
+   348: 0806a132     6 FUNC    GLOBAL DEFAULT   12 history_list
+   349: 0808ca40     4 OBJECT  GLOBAL DEFAULT   23 d7F
+   350: 0806d7a7   905 FUNC    GLOBAL DEFAULT   12 tilde_expand
+   351: 080819a0  1660 OBJECT  GLOBAL DEFAULT   14 strfnames
+   352: 080685e2   252 FUNC    GLOBAL DEFAULT   12 rl_arrow_keys
+   353: 080663b2   101 FUNC    GLOBAL DEFAULT   12 _rl_next_macro_key
+   354: 00000000   179 FUNC    GLOBAL DEFAULT  UND strpbrk@GLIBC_2.0 (2)
+   355: 0808db40     1 OBJECT  GLOBAL DEFAULT   23 _nc_suppress_warnings
+   356: 08070ec1   321 FUNC    GLOBAL DEFAULT   12 _nc_locale_breaks_acs
+   357: 0805fb76    36 FUNC    GLOBAL DEFAULT   12 rl_bind_keyseq_if_unbound
+   358: 0805abff    38 FUNC    GLOBAL DEFAULT   12 rl_stop_output
+   359: 0808de84     4 OBJECT  GLOBAL DEFAULT   23 _rl_print_completions_hor
+   360: 080710be    88 FUNC    GLOBAL DEFAULT   12 reset_shell_mode
+   361: 08072150    18 FUNC    GLOBAL DEFAULT   12 use_extended_names
+   362: 08065f7b    49 FUNC    GLOBAL DEFAULT   12 rl_undo_command
+   363: 00000000     4 OBJECT  GLOBAL DEFAULT  UND opterr@GLIBC_2.0 (2)
+   364: 08058133    67 FUNC    GLOBAL DEFAULT   12 rl_vi_overstrike
+   365: 08072832   133 FUNC    GLOBAL DEFAULT   12 cbreak
+   366: 08056be7   179 FUNC    GLOBAL DEFAULT   12 rl_save_state
+   367: 08057fb3    34 FUNC    GLOBAL DEFAULT   12 rl_vi_set_mark
+   368: 080605be    30 FUNC    GLOBAL DEFAULT   12 rl_re_read_init_file
+   369: 0808de88     4 OBJECT  GLOBAL DEFAULT   23 rl_completion_found_quote
+   370: 08065c0c   103 FUNC    GLOBAL DEFAULT   12 rl_backward_kill_word
+   371: 080570d1    43 FUNC    GLOBAL DEFAULT   12 _rl_keyseq_chain_dispose
+   372: 0808c8c0     4 OBJECT  GLOBAL DEFAULT   23 stdout@GLIBC_2.0 (2)
+   373: 0805fa47   118 FUNC    GLOBAL DEFAULT   12 rl_macro_bind
+   374: 0808ce18     4 OBJECT  GLOBAL DEFAULT   23 rl_filename_quote_charact
+   375: 0808dce0     4 OBJECT  GLOBAL DEFAULT   23 routerAddr
+   376: 08066f1c    45 FUNC    GLOBAL DEFAULT   12 rl_callback_handler_insta
+   377: 0808c8c4     4 OBJECT  GLOBAL DEFAULT   23 stderr@GLIBC_2.0 (2)
+   378: 0808dbd8     4 OBJECT  GLOBAL DEFAULT   23 _nc_comment_start
+   379: 0808d8f8     4 OBJECT  GLOBAL DEFAULT   23 _rl_saved_line_for_histor
+   380: 08066557    95 FUNC    GLOBAL DEFAULT   12 rl_stuff_char
+   381: 0808deac     4 OBJECT  GLOBAL DEFAULT   23 _rl_term_ip
+   382: 00000000   606 FUNC    GLOBAL DEFAULT  UND abort@GLIBC_2.0 (2)
+   383: 0808ca78     4 OBJECT  GLOBAL DEFAULT   23 rl_pending_input
+   384: 08057b60    41 FUNC    GLOBAL DEFAULT   12 _rl_vi_reset_last
+   385: 0806ce52    87 FUNC    GLOBAL DEFAULT   12 history_search_pos
+   386: 08067b38    88 FUNC    GLOBAL DEFAULT   12 rl_backward_byte
+   387: 00000000    49 FUNC    GLOBAL DEFAULT  UND __sigsetjmp@GLIBC_2.0 (2)
+   388: 00000000   148 FUNC    GLOBAL DEFAULT  UND __xstat@GLIBC_2.0 (2)
+   389: 0808d5a0     4 OBJECT  GLOBAL DEFAULT   23 rl_event_hook
+   390: 0805a0c8    55 FUNC    GLOBAL DEFAULT   12 rl_copy_keymap
+   391: 080621dc   141 FUNC    GLOBAL DEFAULT   12 rl_message
+   392: 0808ca84     4 OBJECT  GLOBAL DEFAULT   23 _rl_mark_modified_lines
+   393: 0806502d   110 FUNC    GLOBAL DEFAULT   12 _rl_strindex
+   394: 080710ab    19 FUNC    GLOBAL DEFAULT   12 resetty
+   395: 08071e31   372 FUNC    GLOBAL DEFAULT   12 _nc_read_entry
+   396: 0806d11d   243 FUNC    GLOBAL DEFAULT   12 _rl_find_prev_mbchar
+   397: 00000000   365 FUNC    GLOBAL DEFAULT  UND inet_aton@GLIBC_2.0 (2)
+   398: 08067b90   459 FUNC    GLOBAL DEFAULT   12 _rl_char_search_internal
+   399: 080654c6    15 FUNC    GLOBAL DEFAULT   12 rl_yank_nth_arg
+   400: 0806a6ed    74 FUNC    GLOBAL DEFAULT   12 history_get_time
+   401: 00000000 17197 FUNC    GLOBAL DEFAULT  UND vfprintf@GLIBC_2.0 (2)
+   402: 08066f6f   105 FUNC    GLOBAL DEFAULT   12 _rl_set_cursor
+   403: 0806db30    22 FUNC    GLOBAL DEFAULT   12 rl_set_paren_blink_timeou
+   404: 0808cef0     4 OBJECT  GLOBAL DEFAULT   23 _rl_isearch_terminators
+   405: 08064fbc    44 FUNC    GLOBAL DEFAULT   12 _rl_to_upper
+   406: 0808de8c     4 OBJECT  GLOBAL DEFAULT   23 rl_completion_mark_symlin
+   407: 0806a1bd    90 FUNC    GLOBAL DEFAULT   12 remove_history
+   408: 00000000   164 FUNC    GLOBAL DEFAULT  UND fseek@GLIBC_2.0 (2)
+   409: 08071240   194 FUNC    GLOBAL DEFAULT   12 _nc_name_match
+   410: 0808c21c     4 OBJECT  GLOBAL DEFAULT   22 rl_redisplay_function
+   411: 0806ab05    16 FUNC    GLOBAL DEFAULT   12 history_tokenize
+   412: 0808ca58     4 OBJECT  GLOBAL DEFAULT   23 rl_outstream
+   413: 0805e7cc    73 FUNC    GLOBAL DEFAULT   12 rl_dump_macros
+   414: 08051b30   125 FUNC    GLOBAL DEFAULT   12 printLocalTime
+   415: 00000000    29 FUNC    GLOBAL DEFAULT  UND time@GLIBC_2.0 (2)
+   416: 08067a41    13 FUNC    GLOBAL DEFAULT   12 rl_end_of_line
+   417: 0805b0fb    59 FUNC    GLOBAL DEFAULT   12 _rl_free_match_list
+   418: 08067015    50 FUNC    GLOBAL DEFAULT   12 _rl_enable_meta_key
+   419: 08069f7e    45 FUNC    GLOBAL DEFAULT   12 rl_universal_argument
+   420: 0808cde0     4 OBJECT  GLOBAL DEFAULT   23 _rl_complete_show_all
+   421: 08065516   205 FUNC    GLOBAL DEFAULT   12 rl_yank_pop
+   422: 0805977c   139 FUNC    GLOBAL DEFAULT   12 rl_vi_put
+   423: 0806ce43    15 FUNC    GLOBAL DEFAULT   12 history_search
+   424: 080518c0     0 FUNC    GLOBAL DEFAULT   12 _start
+   425: 08072530    33 FUNC    GLOBAL DEFAULT   12 keypad
+   426: 08067aca   110 FUNC    GLOBAL DEFAULT   12 rl_forward_byte
+   427: 0805fabd    43 FUNC    GLOBAL DEFAULT   12 rl_set_key
+   428: 00000000    72 FUNC    GLOBAL DEFAULT  UND getopt@GLIBC_2.0 (2)
+   429: 08072092   168 FUNC    GLOBAL DEFAULT   12 _nc_access
+   430: 08069f5e    32 FUNC    GLOBAL DEFAULT   12 _rl_arg_init
+   431: 0806f963   579 FUNC    GLOBAL DEFAULT   12 tputs
+   432: 08061398    38 FUNC    GLOBAL DEFAULT   12 rl_reset_line_state
+   433: 00000000   370 FUNC    GLOBAL DEFAULT  UND fgets@GLIBC_2.0 (2)
+   434: 0805e418   283 FUNC    GLOBAL DEFAULT   12 rl_variable_dumper
+   435: 08068000   367 FUNC    GLOBAL DEFAULT   12 rl_forward_word
+   436: 0805a3c4   109 FUNC    GLOBAL DEFAULT   12 rl_history_search_forward
+   437: 08069a92    89 FUNC    GLOBAL DEFAULT   12 rl_maybe_unsave_line
+   438: 080734e2    43 FUNC    GLOBAL DEFAULT   12 _nc_free_entries
+   439: 08066bb0    14 FUNC    GLOBAL DEFAULT   12 _rl_callback_data_dispose
+   440: 08066417   119 FUNC    GLOBAL DEFAULT   12 _rl_add_macro_char
+   441: 08059da7   109 FUNC    GLOBAL DEFAULT   12 rl_vi_fetch_history
+   442: 08058941   117 FUNC    GLOBAL DEFAULT   12 rl_vi_change_char
+   443: 08059ff0    87 FUNC    GLOBAL DEFAULT   12 rl_discard_keymap
+   444: 080669fc   127 FUNC    GLOBAL DEFAULT   12 _rl_read_mbstring
+   445: 0808dbc8     4 OBJECT  GLOBAL DEFAULT   23 _nc_head
+   446: 08072050    42 FUNC    GLOBAL DEFAULT   12 _nc_pathlast
+   447: 080772cf   283 FUNC    GLOBAL DEFAULT   12 _nc_copy_termtype
+   448: 0808de5c     4 OBJECT  GLOBAL DEFAULT   23 rl_end
+   449: 0808cb9c     4 OBJECT  GLOBAL DEFAULT   23 _rl_nscxt
+   450: 0805f306    48 FUNC    GLOBAL DEFAULT   12 rl_unbind_command_in_map
+   451: 00000000   326 FUNC    GLOBAL DEFAULT  UND fputs@GLIBC_2.0 (2)
+   452: 08066be5    65 FUNC    GLOBAL DEFAULT   12 rl_callback_handler_remov
+   453: 08067295   499 FUNC    GLOBAL DEFAULT   12 _rl_get_screen_size
+   454: 08059807   612 FUNC    GLOBAL DEFAULT   12 rl_vi_change_case
+   455: 00000000   378 FUNC    GLOBAL DEFAULT  UND strstr@GLIBC_2.0 (2)
+   456: 00000000   175 FUNC    GLOBAL DEFAULT  UND strlen@GLIBC_2.0 (2)
+   457: 00000000    35 FUNC    GLOBAL DEFAULT  UND longjmp@GLIBC_2.0 (3)
+   458: 0808db6c     4 OBJECT  GLOBAL DEFAULT   23 _nc_screen_chain
+   459: 0805974d    47 FUNC    GLOBAL DEFAULT   12 rl_vi_append_eol
+   460: 08076731    83 FUNC    GLOBAL DEFAULT   12 _nc_safe_strcat
+   461: 08057701   325 FUNC    GLOBAL DEFAULT   12 readline_internal_char
+   462: 08078b67  1630 FUNC    GLOBAL DEFAULT   12 _nc_infotocap
+   463: 00000000    77 FUNC    GLOBAL DEFAULT  UND sigaddset@GLIBC_2.0 (2)
+   464: 0806dd32   187 FUNC    GLOBAL DEFAULT   12 _rl_enable_paren_matching
+   465: 08059d60    71 FUNC    GLOBAL DEFAULT   12 rl_vi_search_again
+   466: 08071050    91 FUNC    GLOBAL DEFAULT   12 _nc_set_tty_mode
+   467: 08067a51    26 FUNC    GLOBAL DEFAULT   12 _rl_set_mark_at_pos
+   468: 08074840   277 FUNC    GLOBAL DEFAULT   12 _nc_init_keytry
+   469: 0805962d    64 FUNC    GLOBAL DEFAULT   12 rl_vi_subst
+   470: 080711b6    19 FUNC    GLOBAL DEFAULT   12 savetty
+   471: 00000000   175 FUNC    GLOBAL DEFAULT  UND iswupper@GLIBC_2.0 (2)
+   472: 08065245    87 FUNC    GLOBAL DEFAULT   12 _rl_abort_internal
+   473: 0807666c    40 FUNC    GLOBAL DEFAULT   12 _nc_str_init
+   474: 00000000   148 FUNC    GLOBAL DEFAULT  UND __lxstat@GLIBC_2.0 (2)
+   475: 080771d8    75 FUNC    GLOBAL DEFAULT   12 _nc_copy_entry
+   476: 0808c8ec     4 OBJECT  GLOBAL DEFAULT   23 counterInitialized
+   477: 08067a6b    27 FUNC    GLOBAL DEFAULT   12 rl_set_mark
+   478: 08059d06    90 FUNC    GLOBAL DEFAULT   12 rl_vi_search
+   479: 00000000    69 FUNC    GLOBAL DEFAULT  UND __strtol_internal@GLIBC_2.0 (2)
+   480: 08064fe8    44 FUNC    GLOBAL DEFAULT   12 _rl_to_lower
+   481: 00000000   299 FUNC    GLOBAL DEFAULT  UND qsort@GLIBC_2.0 (2)
+   482: 00000000   521 FUNC    GLOBAL DEFAULT  UND mbrtowc@GLIBC_2.0 (2)
+   483: 08064fa0    28 FUNC    GLOBAL DEFAULT   12 _rl_lowercase_p
+   484: 080678fe   111 FUNC    GLOBAL DEFAULT   12 _rl_set_screen_size
+   485: 08068765   100 FUNC    GLOBAL DEFAULT   12 rl_replace_line
+   486: 0808c1d8     4 OBJECT  GLOBAL DEFAULT   22 rl_completion_query_items
+   487: 08064f84    28 FUNC    GLOBAL DEFAULT   12 _rl_pure_alphabetic
+   488: 0808ce08     4 OBJECT  GLOBAL DEFAULT   23 rl_completion_type
+   489: 080701e8     6 FUNC    GLOBAL DEFAULT   12 _nc_get_source
+   490: 0808c24d     1 OBJECT  GLOBAL DEFAULT   22 history_subst_char
+   491: 080705f5    41 FUNC    GLOBAL DEFAULT   12 _nc_ospeed
+   492: 0808deb0     4 OBJECT  GLOBAL DEFAULT   23 _rl_term_dc
+   493: 0808db38     1 OBJECT  GLOBAL DEFAULT   23 PC
+   494: 08066163     5 FUNC    GLOBAL DEFAULT   12 rl_push_macro_input
+   495: 08065ba5   103 FUNC    GLOBAL DEFAULT   12 rl_kill_word
+   496: 08068959   300 FUNC    GLOBAL DEFAULT   12 _rl_rubout_char
+   497: 08069a6e    36 FUNC    GLOBAL DEFAULT   12 _rl_free_saved_history_li
+   498: 08089924     4 OBJECT  GLOBAL DEFAULT   22 _rl_bell_preference
+   499: 0806a03e    72 FUNC    GLOBAL DEFAULT   12 xrealloc
+   500: 08072628   107 FUNC    GLOBAL DEFAULT   12 intrflush
+   501: 0805b030    59 FUNC    GLOBAL DEFAULT   12 rl_completion_mode
+   502: 08072950    94 FUNC    GLOBAL DEFAULT   12 _nc_delink_entry
+   503: 0808def8     4 OBJECT  GLOBAL DEFAULT   23 history_offset
+   504: 0806626b   118 FUNC    GLOBAL DEFAULT   12 rl_start_kbd_macro
+   505: 0808dbcc     4 OBJECT  GLOBAL DEFAULT   23 _nc_tail
+   506: 0806a301   182 FUNC    GLOBAL DEFAULT   12 replace_history_entry
+   507: 080614bb    48 FUNC    GLOBAL DEFAULT   12 _rl_clear_screen
+   508: 0808ca88     4 OBJECT  GLOBAL DEFAULT   23 rl_erase_empty_line
+   509: 0805a077    81 FUNC    GLOBAL DEFAULT   12 rl_make_keymap
+   510: 08072551    60 FUNC    GLOBAL DEFAULT   12 halfdelay
+   511: 0805f09f    77 FUNC    GLOBAL DEFAULT   12 rl_named_function
+   512: 08069557   212 FUNC    GLOBAL DEFAULT   12 _rl_overwrite_char
+   513: 0805a746    60 FUNC    GLOBAL DEFAULT   12 _rl_nsearch_callback
+   514: 0806672d   719 FUNC    GLOBAL DEFAULT   12 rl_read_key
+   515: 0808d930     4 OBJECT  GLOBAL DEFAULT   23 rl_byte_oriented
+   516: 0806a54f   414 FUNC    GLOBAL DEFAULT   12 add_history
+   517: 00000000   147 FUNC    GLOBAL DEFAULT  UND getpwent@GLIBC_2.0 (2)
+   518: 080586b9    47 FUNC    GLOBAL DEFAULT   12 rl_vi_insert_beg
+   519: 080706a5    79 FUNC    GLOBAL DEFAULT   12 set_curterm
+   520: 0808c8e4     2 OBJECT  GLOBAL DEFAULT   23 routerPort
+   521: 08059e5c   133 FUNC    GLOBAL DEFAULT   12 rl_add_funmap_entry
+   522: 0806588f    29 FUNC    GLOBAL DEFAULT   12 rl_copy_forward_word
+   523: 00000000   157 FUNC    GLOBAL DEFAULT  UND sigprocmask@GLIBC_2.0 (2)
+   524: 0808a980  2056 OBJECT  GLOBAL DEFAULT   22 emacs_ctlx_keymap
+   525: 080678d5    41 FUNC    GLOBAL DEFAULT   12 rl_reset_terminal
+   526: 00000000   169 FUNC    GLOBAL DEFAULT  UND strncmp@GLIBC_2.0 (2)
+   527: 0808deb4     4 OBJECT  GLOBAL DEFAULT   23 _rl_screenheight
+   528: 0805fbfb    44 FUNC    GLOBAL DEFAULT   12 rl_bind_keyseq
+   529: 0805a87f    28 FUNC    GLOBAL DEFAULT   12 rl_noninc_reverse_search
+   530: 0806540e   184 FUNC    GLOBAL DEFAULT   12 rl_yank_last_arg
+   531: 0806ce31    18 FUNC    GLOBAL DEFAULT   12 history_search_prefix
+   532: 0808dbf0     1 OBJECT  GLOBAL DEFAULT   23 _nc_disable_period
+   533: 08089914     4 OBJECT  GLOBAL DEFAULT   22 rl_insert_mode
+   534: 08057ba5   201 FUNC    GLOBAL DEFAULT   12 rl_vi_fWord
+   535: 00000000   165 FUNC    GLOBAL DEFAULT  UND fputc@GLIBC_2.0 (2)
+   536: 08079301    91 FUNC    GLOBAL DEFAULT   12 __libc_csu_init
+   537: 080734aa    56 FUNC    GLOBAL DEFAULT   12 _nc_free_entry
+   538: 0808c1e0     4 OBJECT  GLOBAL DEFAULT   22 rl_basic_word_break_chara
+   539: 0805ea0f   799 FUNC    GLOBAL DEFAULT   12 rl_invoking_keyseqs_in_ma
+   540: 0805ac25    38 FUNC    GLOBAL DEFAULT   12 rl_restart_output
+   541: 08067a4e     3 FUNC    GLOBAL DEFAULT   12 rl_do_lowercase_version
+   542: 08061520    54 FUNC    GLOBAL DEFAULT   12 _rl_clear_to_eol
+   543: 08065d1e   118 FUNC    GLOBAL DEFAULT   12 rl_backward_kill_line
+   544: 08066b27   130 FUNC    GLOBAL DEFAULT   12 _rl_insert_typein
+   545: 0808c8ac     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_start
+   546: 0808de98     4 OBJECT  GLOBAL DEFAULT   23 rl_binding_keymap
+   547: 0808ca74     4 OBJECT  GLOBAL DEFAULT   23 rl_pre_input_hook
+   548: 08059c0a    56 FUNC    GLOBAL DEFAULT   12 rl_vi_tilde_expand
+   549: 080658c9     7 FUNC    GLOBAL DEFAULT   12 rl_copy_region_to_kill
+   550: 0808c1e8     4 OBJECT  GLOBAL DEFAULT   22 rl_ignore_completion_dupl
+   551: 08068533    14 FUNC    GLOBAL DEFAULT   12 rl_upcase_word
+   552: 080521c0 15159 FUNC    GLOBAL DEFAULT   12 main
+   553: 0808deb8     4 OBJECT  GLOBAL DEFAULT   23 _rl_term_up
+   554: 080670da   111 FUNC    GLOBAL DEFAULT   12 _rl_backspace
+   555: 080714d4    26 FUNC    GLOBAL DEFAULT   12 _nc_keep_tic_dir
+   556: 0808db3c     4 OBJECT  GLOBAL DEFAULT   23 _nc_nulls_sent
+   557: 080694a3    13 FUNC    GLOBAL DEFAULT   12 rl_tab_insert
+   558: 080613be   141 FUNC    GLOBAL DEFAULT   12 rl_save_prompt
+   559: 0808debc     4 OBJECT  GLOBAL DEFAULT   23 _rl_term_cr
+   560: 0808db5c     4 OBJECT  GLOBAL DEFAULT   23 cur_term
+   561: 08056d52    62 FUNC    GLOBAL DEFAULT   12 _rl_keyseq_cxt_alloc
+   562: 0805f0ec   465 FUNC    GLOBAL DEFAULT   12 rl_function_dumper
+   563: 08066a7b   172 FUNC    GLOBAL DEFAULT   12 _rl_read_mbchar
+   564: 08065ff2    60 FUNC    GLOBAL DEFAULT   12 rl_add_undo
+   565: 0805f2bd    73 FUNC    GLOBAL DEFAULT   12 rl_dump_functions
+   566: 00000000   431 FUNC    GLOBAL DEFAULT  UND __libc_start_main@GLIBC_2.0 (2)
+   567: 0808dec0     4 OBJECT  GLOBAL DEFAULT   23 _rl_term_ei
+   568: 0808c1d4     4 OBJECT  GLOBAL DEFAULT   22 _rl_match_hidden_files
+   569: 0808dec4     4 OBJECT  GLOBAL DEFAULT   23 _rl_term_pc
+   570: 08067f52   164 FUNC    GLOBAL DEFAULT   12 rl_backward_char
+   571: 0806dfe0  1087 FUNC    GLOBAL DEFAULT   12 tgetent
+   572: 080893b8     0 NOTYPE  GLOBAL DEFAULT  ABS __init_array_end
+   573: 08051960   464 FUNC    GLOBAL DEFAULT   12 printInteractiveUsage
+   574: 0806f8b2    44 FUNC    GLOBAL DEFAULT   12 _nc_flush
+   575: 0807dc20  1660 OBJECT  GLOBAL DEFAULT   14 strcodes
+   576: 080728b7   141 FUNC    GLOBAL DEFAULT   12 raw
+   577: 08071486    78 FUNC    GLOBAL DEFAULT   12 _nc_tic_dir
+   578: 0808de60     4 OBJECT  GLOBAL DEFAULT   23 _rl_in_stream
+   579: 080665b6    22 FUNC    GLOBAL DEFAULT   12 rl_execute_next
+   580: 0808cdf8     4 OBJECT  GLOBAL DEFAULT   23 rl_complete_with_tilde_ex
+   581: 08059a6b    66 FUNC    GLOBAL DEFAULT   12 rl_vi_arg_digit
+   582: 08073950    85 FUNC    GLOBAL DEFAULT   12 _nc_reset_input
+   583: 0808defc     4 OBJECT  GLOBAL DEFAULT   23 history_length
+   584: 08066062    52 FUNC    GLOBAL DEFAULT   12 rl_begin_undo_group
+   585: 08070466   253 FUNC    GLOBAL DEFAULT   12 _nc_syserr_abort
+   586: 08067e76   220 FUNC    GLOBAL DEFAULT   12 rl_forward_char
+   587: 0806fba6    35 FUNC    GLOBAL DEFAULT   12 putp
+   588: 08057b40    32 FUNC    GLOBAL DEFAULT   12 _rl_vi_initialize_line
+   589: 00000000  1034 FUNC    GLOBAL DEFAULT  UND realloc@GLIBC_2.0 (2)
+   590: 0808c228     4 OBJECT  GLOBAL DEFAULT   22 rl_catch_sigwinch
+   591: 00000000   426 FUNC    GLOBAL DEFAULT  UND strcat@GLIBC_2.0 (2)
+   592: 080723be    92 FUNC    GLOBAL DEFAULT   12 meta
+   593: 08074958    78 FUNC    GLOBAL DEFAULT   12 has_ic
+   594: 080665e3   112 FUNC    GLOBAL DEFAULT   12 rl_getc
+   595: 08066bbe    39 FUNC    GLOBAL DEFAULT   12 _rl_callback_data_alloc
+   596: 0806591a    76 FUNC    GLOBAL DEFAULT   12 rl_unix_line_discard
+   597: 08067165    44 FUNC    GLOBAL DEFAULT   12 _rl_output_some_chars
+   598: 0808ce10     4 OBJECT  GLOBAL DEFAULT   23 rl_completion_word_break_
+   599: 080575b4   153 FUNC    GLOBAL DEFAULT   12 _rl_dispatch_callback
+   600: 0805a047    48 FUNC    GLOBAL DEFAULT   12 rl_make_bare_keymap
+   601: 080896a0     0 NOTYPE  WEAK   DEFAULT   22 data_start
+   602: 080714ee  2113 FUNC    GLOBAL DEFAULT   12 _nc_read_file_entry
+   603: 080706f4   122 FUNC    GLOBAL DEFAULT   12 napms
+   604: 00000000    93 FUNC    GLOBAL DEFAULT  UND towupper@GLIBC_2.0 (2)
+   605: 0805c336   177 FUNC    GLOBAL DEFAULT   12 rl_completion_matches
+   606: 00000000    56 FUNC    GLOBAL DEFAULT  UND printf@GLIBC_2.0 (2)
+   607: 0805fae8    43 FUNC    GLOBAL DEFAULT   12 rl_bind_keyseq_in_map
+   608: 08061580   179 FUNC    GLOBAL DEFAULT   12 _rl_move_vert
+   609: 00000000    60 FUNC    GLOBAL DEFAULT  UND bind@GLIBC_2.0 (2)
+   610: 0808990c     4 OBJECT  GLOBAL DEFAULT   22 _rl_keymap
+   611: 08066541    22 FUNC    GLOBAL DEFAULT   12 rl_set_keyboard_input_tim
+   612: 00000000    13 FUNC    GLOBAL DEFAULT  UND getuid@GLIBC_2.0 (2)
+   613: 08062269   115 FUNC    GLOBAL DEFAULT   12 rl_character_len
+   614: 0807207a    24 FUNC    GLOBAL DEFAULT   12 _nc_basename
+   615: 0806652f    18 FUNC    GLOBAL DEFAULT   12 _rl_pushed_input_availabl
+   616: 0807938c     0 FUNC    GLOBAL DEFAULT   13 _fini
+   617: 08073fc2  2167 FUNC    GLOBAL DEFAULT   12 _nc_get_token
+   618: 08066490    18 FUNC    GLOBAL DEFAULT   12 _rl_any_typein
+   619: 00000000   185 FUNC    GLOBAL DEFAULT  UND fcntl@GLIBC_2.0 (3)
+   620: 00000000    39 FUNC    GLOBAL DEFAULT  UND memcpy@GLIBC_2.0 (2)
+   621: 0808dec8     4 OBJECT  GLOBAL DEFAULT   23 _rl_term_clrpag
+   622: 08068517    14 FUNC    GLOBAL DEFAULT   12 rl_capitalize_word
+   623: 0805dad7    19 FUNC    GLOBAL DEFAULT   12 rl_set_keymap
+   624: 08067ff6     5 FUNC    GLOBAL DEFAULT   12 rl_backward
+   625: 08089904     4 OBJECT  GLOBAL DEFAULT   22 rl_readline_version
+   626: 08066f50    31 FUNC    GLOBAL DEFAULT   12 rl_get_screen_size
+   627: 00000000   442 FUNC    GLOBAL DEFAULT  UND fclose@GLIBC_2.1 (4)
+   628: 0808de64     4 OBJECT  GLOBAL DEFAULT   23 _rl_out_stream
+   629: 08084240  3980 OBJECT  GLOBAL DEFAULT   14 _nc_cap_hash_table
+   630: 00000000    56 FUNC    GLOBAL DEFAULT  UND __ctype_toupper_loc@GLIBC_2.3 (5)
+   631: 0808c24c     1 OBJECT  GLOBAL DEFAULT   22 history_expansion_char
+   632: 00000000   441 FUNC    GLOBAL DEFAULT  UND strrchr@GLIBC_2.0 (2)
+   633: 08067191    87 FUNC    GLOBAL DEFAULT   12 rl_get_termcap
+   634: 0807392b    28 FUNC    GLOBAL DEFAULT   12 _nc_resolve_uses
+   635: 080766d6    91 FUNC    GLOBAL DEFAULT   12 _nc_safe_strcpy
+   636: 08055d00    85 FUNC    GLOBAL DEFAULT   12 sighandler
+   637: 00000000    87 FUNC    GLOBAL DEFAULT  UND __strdup@GLIBC_2.0 (2)
+   638: 0807241a   165 FUNC    GLOBAL DEFAULT   12 curs_set
+   639: 08068541   161 FUNC    GLOBAL DEFAULT   12 rl_newline
+   640: 00000000    72 FUNC    GLOBAL DEFAULT  UND getopt_long@GLIBC_2.0 (2)
+   641: 08070e54   109 FUNC    GLOBAL DEFAULT   12 _nc_update_screensize
+   642: 08057e9d    69 FUNC    GLOBAL DEFAULT   12 rl_vi_bracktype
+   643: 08058e3d    83 FUNC    GLOBAL DEFAULT   12 rl_vi_end_word
+   644: 08067149    28 FUNC    GLOBAL DEFAULT   12 _rl_output_character_func
+   645: 0808decc     4 OBJECT  GLOBAL DEFAULT   23 _rl_screenchars
+   646: 0808d92c     4 OBJECT  GLOBAL DEFAULT   23 history_search_delimiter_
+   647: 08070e29    43 FUNC    GLOBAL DEFAULT   12 setupterm
+   648: 0805e9c6    73 FUNC    GLOBAL DEFAULT   12 rl_list_funmap_names
+   649: 08061633    72 FUNC    GLOBAL DEFAULT   12 _rl_clean_up_for_exit
+   650: 00000000    68 FUNC    GLOBAL DEFAULT  UND closedir@GLIBC_2.0 (2)
+   651: 00000000    61 FUNC    GLOBAL DEFAULT  UND gettimeofday@GLIBC_2.0 (2)
+   652: 080724bf   113 FUNC    GLOBAL DEFAULT   12 _nc_keypad
+   653: 08058cd3   362 FUNC    GLOBAL DEFAULT   12 rl_vi_fword
+   654: 0806620f    92 FUNC    GLOBAL DEFAULT   12 rl_end_kbd_macro
+   655: 08089910     4 OBJECT  GLOBAL DEFAULT   22 rl_editing_mode
+   656: 0807102e    27 FUNC    GLOBAL DEFAULT   12 _nc_get_locale
+   657: 080658ac    29 FUNC    GLOBAL DEFAULT   12 rl_copy_backward_word
+   658: 0805f336  1060 FUNC    GLOBAL DEFAULT   12 rl_translate_keyseq
+   659: 0805d8d0   101 FUNC    GLOBAL DEFAULT   12 rl_bind_key
+   660: 08065da0    50 FUNC    GLOBAL DEFAULT   12 _rl_fix_last_undo_of_type
+   661: 00000000    53 FUNC    GLOBAL DEFAULT  UND strcoll@GLIBC_2.0 (2)
+   662: 0808c3b0     4 OBJECT  GLOBAL DEFAULT   22 _nc_check_termtype
+   663: 00000000   138 FUNC    GLOBAL DEFAULT  UND opendir@GLIBC_2.0 (2)
+   664: 00000000    60 FUNC    GLOBAL DEFAULT  UND snprintf@GLIBC_2.0 (2)
+   665: 0808caa0     4 OBJECT  GLOBAL DEFAULT   23 _rl_meta_flag
+   666: 00000000   169 FUNC    GLOBAL DEFAULT  UND setpwent@GLIBC_2.0 (2)
+   667: 0805f880   455 FUNC    GLOBAL DEFAULT   12 rl_generic_bind
+   668: 00000000   122 FUNC    GLOBAL DEFAULT  UND open@GLIBC_2.0 (3)
+   669: 0808dd00   156 OBJECT  GLOBAL DEFAULT   23 env
+   670: 080727e5    77 FUNC    GLOBAL DEFAULT   12 qiflush
+   671: 08061556    42 FUNC    GLOBAL DEFAULT   12 _rl_erase_entire_line
+   672: 08076a2a    28 FUNC    GLOBAL DEFAULT   12 key_defined
+   673: 0808cf04     4 OBJECT  GLOBAL DEFAULT   23 _rl_suppress_redisplay
+   674: 08057d1e   308 FUNC    GLOBAL DEFAULT   12 rl_vi_eWord
+   675: 08071302   104 FUNC    GLOBAL DEFAULT   12 _nc_first_name
+   676: 0808db60     4 OBJECT  GLOBAL DEFAULT   23 stdscr
+   677: 08064f20    17 FUNC    GLOBAL DEFAULT   12 _rl_digit_p
+   678: 00000000   171 FUNC    GLOBAL DEFAULT  UND endpwent@GLIBC_2.0 (2)
+   679: 08069aeb   148 FUNC    GLOBAL DEFAULT   12 rl_get_next_history
+   680: 080749f0   264 FUNC    GLOBAL DEFAULT   12 _nc_capcmp
+   681: 0808d568     4 OBJECT  GLOBAL DEFAULT   23 _rl_doing_an_undo
+   682: 00000000    30 FUNC    GLOBAL DEFAULT  UND sigemptyset@GLIBC_2.0 (2)
+   683: 08058f9c   183 FUNC    GLOBAL DEFAULT   12 rl_vi_redo
+   684: 08067dba    74 FUNC    GLOBAL DEFAULT   12 rl_backward_char_search
+   685: 08073c81    58 FUNC    GLOBAL DEFAULT   12 _nc_push_token
+   686: 0806a217    34 FUNC    GLOBAL DEFAULT   12 unstifle_history
+   687: 00000000    93 FUNC    GLOBAL DEFAULT  UND strcasecmp@GLIBC_2.0 (2)
+   688: 08068b86    43 FUNC    GLOBAL DEFAULT   12 rl_delete_or_show_complet
+   689: 0805fc27  1748 FUNC    GLOBAL DEFAULT   12 rl_parse_and_bind
+   690: 0808ded0     4 OBJECT  GLOBAL DEFAULT   23 _rl_screenwidth
+   691: 00000000    26 FUNC    GLOBAL DEFAULT  UND __ctype_get_mb_cur_max@GLIBC_2.0 (2)
+   692: 080791db    19 FUNC    GLOBAL DEFAULT   12 _nc_get_hash_table
+   693: 080898f0    16 OBJECT  GLOBAL DEFAULT   22 allCommands
+   694: 0808db48     4 OBJECT  GLOBAL DEFAULT   23 _nc_curr_col
+   695: 00000000    48 FUNC    GLOBAL DEFAULT  UND tcflow@GLIBC_2.0 (2)
+   696: 0807232a    23 FUNC    GLOBAL DEFAULT   12 notimeout
+   697: 08072280   118 FUNC    GLOBAL DEFAULT   12 _nc_home_terminfo
+   698: 080702f5    42 FUNC    GLOBAL DEFAULT   12 _nc_get_type
+   699: 08079245   187 FUNC    GLOBAL DEFAULT   12 _nc_find_entry
+   700: 08057846   264 FUNC    GLOBAL DEFAULT   12 readline_internal_teardow
+   701: 0808ce1c     4 OBJECT  GLOBAL DEFAULT   23 rl_special_prefixes
+   702: 0806d2ca   379 FUNC    GLOBAL DEFAULT   12 _rl_find_next_mbchar
+   703: 00000000   288 FUNC    GLOBAL DEFAULT  UND getpwnam@GLIBC_2.0 (2)
+   704: 08073c62    31 FUNC    GLOBAL DEFAULT   12 _nc_panic_mode
+   705: 00000000   230 FUNC    GLOBAL DEFAULT  UND exit@GLIBC_2.0 (2)
+   706: 08068525    14 FUNC    GLOBAL DEFAULT   12 rl_downcase_word
+   707: 08076eb0   808 FUNC    GLOBAL DEFAULT   12 _nc_wrap_entry
+   708: 08069ce2    54 FUNC    GLOBAL DEFAULT   12 _rl_arg_getchar
+   709: 0808a160  2056 OBJECT  GLOBAL DEFAULT   22 emacs_meta_keymap
+   710: 08059e57     5 FUNC    GLOBAL DEFAULT   12 rl_vi_undo
+   711: 08058b36   413 FUNC    GLOBAL DEFAULT   12 rl_vi_bword
+   712: 08066653   176 FUNC    GLOBAL DEFAULT   12 _rl_input_available
+   713: 080701ee    10 FUNC    GLOBAL DEFAULT   12 _nc_set_source
+   714: 0808c25c     4 OBJECT  GLOBAL DEFAULT   22 tilde_additional_suffixes
+   715: 08056e9a   508 FUNC    GLOBAL DEFAULT   12 rl_initialize
+   716: 00000000   744 FUNC    GLOBAL DEFAULT  UND calloc@GLIBC_2.0 (2)
+   717: 0806a138    30 FUNC    GLOBAL DEFAULT   12 current_history
+   718: 08059458   469 FUNC    GLOBAL DEFAULT   12 rl_vi_change_to
+   719: 080587b7   203 FUNC    GLOBAL DEFAULT   12 rl_vi_delete
+   720: 0808cef4     4 OBJECT  GLOBAL DEFAULT   23 _rl_iscxt
+   721: 0808c1f8    16 OBJECT  GLOBAL DEFAULT   22 _rl_possible_control_pref
+   722: 0805ad57   716 FUNC    GLOBAL DEFAULT   12 rl_prep_terminal
+   723: 0808ca80     4 OBJECT  GLOBAL DEFAULT   23 _rl_horizontal_scroll_mod
+   724: 00000000    52 FUNC    GLOBAL DEFAULT  UND sscanf@GLIBC_2.0 (2)
+   725: 0808c8ac     0 NOTYPE  GLOBAL DEFAULT  ABS _edata
+   726: 08072351    25 FUNC    GLOBAL DEFAULT   12 typeahead
+   727: 080605dc    52 FUNC    GLOBAL DEFAULT   12 rl_add_defun
+   728: 08072162   189 FUNC    GLOBAL DEFAULT   12 _nc_free_termtype
+   729: 08069790    41 FUNC    GLOBAL DEFAULT   12 _rl_reset_argument
+   730: 00000000   165 FUNC    GLOBAL DEFAULT  UND _IO_putc@GLIBC_2.0 (2)
+   731: 00000000   423 FUNC    GLOBAL DEFAULT  UND free@GLIBC_2.0 (2)
+   732: 0808df04     0 NOTYPE  GLOBAL DEFAULT  ABS _end
+   733: 00000000    63 FUNC    GLOBAL DEFAULT  UND ioctl@GLIBC_2.0 (2)
+   734: 0808dbd4     4 OBJECT  GLOBAL DEFAULT   23 _nc_curr_file_pos
+   735: 0808c1f4     4 OBJECT  GLOBAL DEFAULT   22 rl_completion_append_char
+   736: 08065b69    60 FUNC    GLOBAL DEFAULT   12 rl_kill_full_line
+   737: 080898a0    60 OBJECT  GLOBAL DEFAULT   22 state1Commands
+   738: 08058efe   116 FUNC    GLOBAL DEFAULT   12 rl_vi_next_word
+   739: 08056bdc    11 FUNC    GLOBAL DEFAULT   12 _rl_set_the_line
+   740: 08072755   144 FUNC    GLOBAL DEFAULT   12 noraw
+   741: 0805ed2e    28 FUNC    GLOBAL DEFAULT   12 rl_invoking_keyseqs
+   742: 08058088   171 FUNC    GLOBAL DEFAULT   12 rl_vi_overstrike_delete
+   743: 08061310    87 FUNC    GLOBAL DEFAULT   12 rl_on_new_line
+   744: 00000000   182 FUNC    GLOBAL DEFAULT  UND iswlower@GLIBC_2.0 (2)
+   745: 080651f4    67 FUNC    GLOBAL DEFAULT   12 rl_extend_line_buffer
+   746: 00000000    48 FUNC    GLOBAL DEFAULT  UND isatty@GLIBC_2.0 (2)
+   747: 0808db78     4 OBJECT  GLOBAL DEFAULT   23 COLS
+   748: 00000000    67 FUNC    GLOBAL DEFAULT  UND memset@GLIBC_2.0 (2)
+   749: 0808db68     4 OBJECT  GLOBAL DEFAULT   23 newscr
+   750: 0808ce04     4 OBJECT  GLOBAL DEFAULT   23 rl_attempted_completion_o
+   751: 080896c0     4 OBJECT  GLOBAL DEFAULT   22 sdSequenceNum
+   752: 08061f6c   279 FUNC    GLOBAL DEFAULT   12 _rl_redisplay_after_sigwi
+   753: 00000000   116 FUNC    GLOBAL DEFAULT  UND strncasecmp@GLIBC_2.0 (2)
+   754: 080584a2   330 FUNC    GLOBAL DEFAULT   12 rl_vi_char_search
+   755: 0808c8c8     4 OBJECT  GLOBAL DEFAULT   23 stdin@GLIBC_2.0 (2)
+   756: 08076981    15 FUNC    GLOBAL DEFAULT   12 _nc_visbufn
+   757: 08068e84   308 FUNC    GLOBAL DEFAULT   12 rl_transpose_words
+   758: 08069b7f   154 FUNC    GLOBAL DEFAULT   12 rl_get_previous_history
+   759: 08072300    42 FUNC    GLOBAL DEFAULT   12 nodelay
+   760: 0807061e    54 FUNC    GLOBAL DEFAULT   12 baudrate
+   761: 0808de68     4 OBJECT  GLOBAL DEFAULT   23 rl_num_chars_to_read
+   762: 08076990    18 FUNC    GLOBAL DEFAULT   12 _nc_visbuf2
+   763: 08072220    94 FUNC    GLOBAL DEFAULT   12 _nc_getenv_num
+   764: 08065e1e   349 FUNC    GLOBAL DEFAULT   12 rl_do_undo
+   765: 0808ded4     4 OBJECT  GLOBAL DEFAULT   23 _rl_term_im
+   766: 0808de6c     4 OBJECT  GLOBAL DEFAULT   23 _rl_dispatching_keymap
+   767: 08059bbd    77 FUNC    GLOBAL DEFAULT   12 rl_vi_movement_mode
+   768: 08064be3    34 FUNC    GLOBAL DEFAULT   12 rl_cleanup_after_signal
+   769: 0805fb13    99 FUNC    GLOBAL DEFAULT   12 rl_bind_keyseq_if_unbound
+   770: 0805db1a    33 FUNC    GLOBAL DEFAULT   12 rl_get_keymap_name_from_e
+   771: 080570cc     5 FUNC    GLOBAL DEFAULT   12 _rl_keyseq_cxt_dispose
+   772: 0808c1c8     4 OBJECT  GLOBAL DEFAULT   22 rl_prep_term_function
+   773: 08067a34    13 FUNC    GLOBAL DEFAULT   12 rl_beg_of_line
+   774: 0805d852    13 FUNC    GLOBAL DEFAULT   12 rl_possible_completions
+   775: 0806105a   177 FUNC    GLOBAL DEFAULT   12 _rl_scxt_alloc
+   776: 0806cfc0   129 FUNC    GLOBAL DEFAULT   12 sh_single_quote
+   777: 00000000   162 FUNC    GLOBAL DEFAULT  UND strncpy@GLIBC_2.0 (2)
+   778: 00000000   138 FUNC    GLOBAL DEFAULT  UND lseek64@GLIBC_2.2 (6)
+   779: 08057a2f   125 FUNC    GLOBAL DEFAULT   12 rl_set_prompt
+   780: 0808ca98     1 OBJECT  GLOBAL DEFAULT   23 _rl_parsing_conditionaliz
+   781: 0805d845    13 FUNC    GLOBAL DEFAULT   12 rl_insert_completions
+   782: 0805d485   960 FUNC    GLOBAL DEFAULT   12 rl_complete_internal
+   783: 08066108    50 FUNC    GLOBAL DEFAULT   12 _rl_push_executing_macro
+   784: 0808db64     4 OBJECT  GLOBAL DEFAULT   23 curscr
+   785: 0805daea     6 FUNC    GLOBAL DEFAULT   12 rl_get_keymap
+   786: 08089920     4 OBJECT  GLOBAL DEFAULT   22 _rl_eof_char
+   787: 00000000    48 FUNC    GLOBAL DEFAULT  UND fopen@GLIBC_2.1 (4)
+   788: 0808deec     4 OBJECT  GLOBAL DEFAULT   23 _rl_argcxt
+   789: 0808c1e4     4 OBJECT  GLOBAL DEFAULT   22 rl_basic_quote_characters
+   790: 0808dbdc     4 OBJECT  GLOBAL DEFAULT   23 _nc_comment_end
+   791: 00000000    50 FUNC    GLOBAL DEFAULT  UND _setjmp@GLIBC_2.0 (2)
+   792: 00000000    99 FUNC    GLOBAL DEFAULT  UND wcwidth@GLIBC_2.0 (2)
+   793: 0808c1dc     4 OBJECT  GLOBAL DEFAULT   22 _rl_page_completions
+   794: 0805d9eb   184 FUNC    GLOBAL DEFAULT   12 rl_function_of_keyseq
+   795: 080893b8     0 NOTYPE  GLOBAL DEFAULT  ABS __init_array_start
+   796: 08065c73    62 FUNC    GLOBAL DEFAULT   12 rl_kill_region
+   797: 080698cb    59 FUNC    GLOBAL DEFAULT   12 rl_vi_editing_mode
+   798: 0808de7c     4 OBJECT  GLOBAL DEFAULT   23 funmap_program_specific_e
+   799: 0808c8cc     4 OBJECT  GLOBAL DEFAULT   23 optarg@GLIBC_2.0 (2)
+   800: 0805abfa     5 FUNC    GLOBAL DEFAULT   12 rl_tty_set_default_bindin
+   801: 08067a86    68 FUNC    GLOBAL DEFAULT   12 rl_exchange_point_and_mar
+   802: 0806529c     5 FUNC    GLOBAL DEFAULT   12 rl_abort
+   803: 08073cf0   722 FUNC    GLOBAL DEFAULT   12 _nc_trans_string
+   804: 080793c4     4 OBJECT  GLOBAL DEFAULT   14 _IO_stdin_used
+   805: 0806a3b7    63 FUNC    GLOBAL DEFAULT   12 free_history_entry
+   806: 0808ded8     4 OBJECT  GLOBAL DEFAULT   23 _rl_term_IC
+   807: 00000000   233 FUNC    GLOBAL DEFAULT  UND strtok@GLIBC_2.0 (2)
+   808: 0808ca64     4 OBJECT  GLOBAL DEFAULT   23 rl_visible_prompt_length
+   809: 0808d93c     4 OBJECT  GLOBAL DEFAULT   23 UP
+   810: 00000000    61 FUNC    GLOBAL DEFAULT  UND kill@GLIBC_2.0 (2)
+   811: 0806964e    64 FUNC    GLOBAL DEFAULT   12 _rl_replace_text
+   812: 0808ca44     4 OBJECT  GLOBAL DEFAULT   23 _rl_last_command_was_kill
+   813: 0808de70     4 OBJECT  GLOBAL DEFAULT   23 _rl_comment_begin
+   814: 0806cf03    31 FUNC    GLOBAL DEFAULT   12 sh_get_home_dir
+   815: 0808de74     4 OBJECT  GLOBAL DEFAULT   23 rl_point
+   816: 00000000    95 FUNC    GLOBAL DEFAULT  UND srandom@GLIBC_2.0 (2)
+   817: 080811e0   160 OBJECT  GLOBAL DEFAULT   14 numnames
+   818: 0808dedc     4 OBJECT  GLOBAL DEFAULT   23 rl_prefer_env_winsize
+   819: 080705b4    65 FUNC    GLOBAL DEFAULT   12 _nc_baudrate
+   820: 0808de9c     4 OBJECT  GLOBAL DEFAULT   23 rl_linefunc
+   821: 0808dbe0     4 OBJECT  GLOBAL DEFAULT   23 _nc_start_line
+   822: 0806a239     6 FUNC    GLOBAL DEFAULT   12 history_is_stifled
+   823: 080650e7   269 FUNC    GLOBAL DEFAULT   12 rl_tilde_expand
+   824: 08076e2f   129 FUNC    GLOBAL DEFAULT   12 _nc_save_str
+   825: 0808dee0     4 OBJECT  GLOBAL DEFAULT   23 _rl_term_backspace
+   826: 0806962b    35 FUNC    GLOBAL DEFAULT   12 rl_insert
+   827: 0808ca60     4 OBJECT  GLOBAL DEFAULT   23 rl_prompt
+   828: 080791c8    19 FUNC    GLOBAL DEFAULT   12 _nc_get_table
+   829: 00000000    52 FUNC    GLOBAL DEFAULT  UND sprintf@GLIBC_2.0 (2)
+   830: 00000000   345 FUNC    GLOBAL DEFAULT  UND fwrite@GLIBC_2.0 (2)
+   831: 08059ee1    79 FUNC    GLOBAL DEFAULT   12 rl_initialize_funmap
+   832: 0808df00     4 OBJECT  GLOBAL DEFAULT   23 history_inhibit_expansion
+   833: 0805ace3   116 FUNC    GLOBAL DEFAULT   12 rl_deprep_terminal
+   834: 080896a0     0 NOTYPE  GLOBAL DEFAULT   22 __data_start
+   835: 0808de90     4 OBJECT  GLOBAL DEFAULT   23 rl_inhibit_completion
+   836: 0808cf14     4 OBJECT  GLOBAL DEFAULT   23 _rl_last_v_pos
+   837: 08072341    16 FUNC    GLOBAL DEFAULT   12 wtimeout
+   838: 08062083    49 FUNC    GLOBAL DEFAULT   12 rl_clear_message
+   839: 0805daa3    52 FUNC    GLOBAL DEFAULT   12 rl_get_keymap_name
+   840: 08057e52    22 FUNC    GLOBAL DEFAULT   12 rl_vi_insertion_mode
+   841: 00000000    60 FUNC    GLOBAL DEFAULT  UND socket@GLIBC_2.0 (2)
+   842: 0808d7c4     4 OBJECT  GLOBAL DEFAULT   23 _rl_callback_data
+   843: 08069c52    39 FUNC    GLOBAL DEFAULT   12 _rl_start_using_history
+   844: 0806f850    98 FUNC    GLOBAL DEFAULT   12 _nc_outch
+   845: 00000000   164 FUNC    GLOBAL DEFAULT  UND readdir@GLIBC_2.0 (2)
+   846: 0808db74     4 OBJECT  GLOBAL DEFAULT   23 LINES
+   847: 0808d8f4     4 OBJECT  GLOBAL DEFAULT   23 _rl_history_preserve_poin
+   848: 00000000     0 NOTYPE  WEAK   DEFAULT  UND _Jv_RegisterClasses
+   849: 00000000    56 FUNC    GLOBAL DEFAULT  UND __ctype_b_loc@GLIBC_2.3 (5)
+   850: 080679e0    84 FUNC    GLOBAL DEFAULT   12 _rl_fix_point
+   851: 0807dac0   180 OBJECT  GLOBAL DEFAULT   14 boolcodes
+   852: 0806fe76   882 FUNC    GLOBAL DEFAULT   12 _nc_trim_sgr0
+   853: 080708f6  1331 FUNC    GLOBAL DEFAULT   12 _nc_setupterm
+   854: 080687c9   207 FUNC    GLOBAL DEFAULT   12 rl_delete_text
+   855: 0808c8e8     4 OBJECT  GLOBAL DEFAULT   23 keySchedule
+   856: 08064a80    42 FUNC    GLOBAL DEFAULT   12 rl_free_line_state
+   857: 08061c49   408 FUNC    GLOBAL DEFAULT   12 _rl_move_cursor_relative
+   858: 08066c63   697 FUNC    GLOBAL DEFAULT   12 rl_callback_read_char
+   859: 08069062   777 FUNC    GLOBAL DEFAULT   12 _rl_insert_char
+   860: 08069c3a    24 FUNC    GLOBAL DEFAULT   12 rl_end_of_history
+   861: 08069690   252 FUNC    GLOBAL DEFAULT   12 _rl_init_eightbit
+   862: 08069906    84 FUNC    GLOBAL DEFAULT   12 rl_replace_from_history
+   863: 08064f6a    26 FUNC    GLOBAL DEFAULT   12 _rl_uppercase_p
+   864: 0806defc   228 FUNC    GLOBAL DEFAULT   12 tgetstr
+   865: 0808dee4     4 OBJECT  GLOBAL DEFAULT   23 _rl_term_DC
+   866: 0808c8d0     4 OBJECT  GLOBAL DEFAULT   23 optind@GLIBC_2.0 (2)
+   867: 00000000    77 FUNC    GLOBAL DEFAULT  UND sigdelset@GLIBC_2.0 (2)
+   868: 0808cdec     4 OBJECT  GLOBAL DEFAULT   23 rl_visible_stats
+   869: 080711c9    48 FUNC    GLOBAL DEFAULT   12 def_prog_mode
+   870: 08069833    49 FUNC    GLOBAL DEFAULT   12 rl_emacs_editing_mode
+   871: 0808de94     4 OBJECT  GLOBAL DEFAULT   23 rl_completion_quote_chara
+   872: 00000000   175 FUNC    GLOBAL DEFAULT  UND tcgetattr@GLIBC_2.0 (2)
+   873: 0808dee8     4 OBJECT  GLOBAL DEFAULT   23 _rl_enable_keypad
+   874: 00000000   122 FUNC    GLOBAL DEFAULT  UND read@GLIBC_2.0 (3)
+   875: 0808992c     4 OBJECT  GLOBAL DEFAULT   22 _rl_bind_stty_chars
+   876: 00000000     4 OBJECT  GLOBAL DEFAULT  UND optopt@GLIBC_2.0 (2)
+   877: 08072140     3 FUNC    GLOBAL DEFAULT   12 _nc_fallback
+   878: 0808ca70     4 OBJECT  GLOBAL DEFAULT   23 rl_startup_hook
+   879: 0807840b  1687 FUNC    GLOBAL DEFAULT   12 _nc_captoinfo
+   880: 080749a6    61 FUNC    GLOBAL DEFAULT   12 has_il
+   881: 0806a3f6    86 FUNC    GLOBAL DEFAULT   12 clear_history
+   882: 08060fc0    99 FUNC    GLOBAL DEFAULT   12 _rl_search_getchar
+   883: 0808ce2c     4 OBJECT  GLOBAL DEFAULT   23 rl_char_is_quoted_p
+   884: 0808c248     4 OBJECT  GLOBAL DEFAULT   22 history_base
+   885: 00000000     0 NOTYPE  WEAK   DEFAULT  UND __gmon_start__
+   886: 00000000    32 FUNC    GLOBAL DEFAULT  UND strcpy@GLIBC_2.0 (2)
+
+Histogram for bucket list length (total of 521 buckets):
+ Length  Number     % of total  Coverage
+      0  365        ( 70.1%)
+      1  88         ( 16.9%)     35.6%
+      2  52         ( 10.0%)     77.7%
+      3  11         (  2.1%)     91.1%
+      4  3          (  0.6%)     96.0%
+      5  2          (  0.4%)    100.0%
+
+Version symbols section '.gnu.version' contains 887 entries:
+ Addr: 0000000008050564  Offset: 0x008564  Link: 4 (.dynsym)
+  000:   0 (*local*)       1 (*global*)      1 (*global*)      1 (*global*)   
+  004:   1 (*global*)      1 (*global*)      1 (*global*)      2 (GLIBC_2.0)  
+  008:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  00c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  010:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  014:   1 (*global*)      1 (*global*)      1 (*global*)      2 (GLIBC_2.0)  
+  018:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  01c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  020:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  024:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  028:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  02c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  030:   1 (*global*)      1 (*global*)      2 (GLIBC_2.0)     1 (*global*)   
+  034:   1 (*global*)      1 (*global*)      1 (*global*)      3 (GLIBC_2.0)  
+  038:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  03c:   1 (*global*)      1 (*global*)      2 (GLIBC_2.0)     2 (GLIBC_2.0)  
+  040:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  044:   1 (*global*)      4 (GLIBC_2.1)     1 (*global*)      1 (*global*)   
+  048:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  04c:   2 (GLIBC_2.0)     1 (*global*)      1 (*global*)      1 (*global*)   
+  050:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  054:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  058:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  05c:   1 (*global*)      2 (GLIBC_2.0)     1 (*global*)      1 (*global*)   
+  060:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  064:   1 (*global*)      5 (GLIBC_2.3)     3 (GLIBC_2.0)     1 (*global*)   
+  068:   1 (*global*)      1 (*global*)      1 (*global*)      3 (GLIBC_2.0)  
+  06c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  070:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  074:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  078:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  07c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  080:   3 (GLIBC_2.0)     2 (GLIBC_2.0)     1 (*global*)      3 (GLIBC_2.0)  
+  084:   2 (GLIBC_2.0)     1 (*global*)      1 (*global*)      1 (*global*)   
+  088:   1 (*global*)      2 (GLIBC_2.0)     1 (*global*)      1 (*global*)   
+  08c:   1 (*global*)      1 (*global*)      3 (GLIBC_2.0)     1 (*global*)   
+  090:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  094:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  098:   2 (GLIBC_2.0)     1 (*global*)      1 (*global*)      1 (*global*)   
+  09c:   2 (GLIBC_2.0)     1 (*global*)      1 (*global*)      1 (*global*)   
+  0a0:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0a4:   2 (GLIBC_2.0)     1 (*global*)      1 (*global*)      1 (*global*)   
+  0a8:   1 (*global*)      1 (*global*)      1 (*global*)      2 (GLIBC_2.0)  
+  0ac:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0b0:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0b4:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0b8:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0bc:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0c0:   1 (*global*)      1 (*global*)      6 (GLIBC_2.2)     1 (*global*)   
+  0c4:   1 (*global*)      1 (*global*)      1 (*global*)      2 (GLIBC_2.0)  
+  0c8:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0cc:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0d0:   2 (GLIBC_2.0)     2 (GLIBC_2.0)     1 (*global*)      1 (*global*)   
+  0d4:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0d8:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0dc:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0e0:   1 (*global*)      1 (*global*)      1 (*global*)      2 (GLIBC_2.0)  
+  0e4:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0e8:   2 (GLIBC_2.0)     2 (GLIBC_2.0)     2 (GLIBC_2.0)     1 (*global*)   
+  0ec:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0f0:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0f4:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0f8:   1 (*global*)      1 (*global*)      3 (GLIBC_2.0)     1 (*global*)   
+  0fc:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  100:   1 (*global*)      1 (*global*)      1 (*global*)      2 (GLIBC_2.0)  
+  104:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  108:   1 (*global*)      1 (*global*)      1 (*global*)      2 (GLIBC_2.0)  
+  10c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  110:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  114:   2 (GLIBC_2.0)     1 (*global*)      1 (*global*)      1 (*global*)   
+  118:   1 (*global*)      1 (*global*)      2 (GLIBC_2.0)     1 (*global*)   
+  11c:   1 (*global*)      1 (*global*)      1 (*global*)      2 (GLIBC_2.0)  
+  120:   1 (*global*)      1 (*global*)      2 (GLIBC_2.0)     1 (*global*)   
+  124:   1 (*global*)      1 (*global*)      2 (GLIBC_2.0)     1 (*global*)   
+  128:   1 (*global*)      1 (*global*)      2 (GLIBC_2.0)     1 (*global*)   
+  12c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  130:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  134:   2 (GLIBC_2.0)     1 (*global*)      1 (*global*)      1 (*global*)   
+  138:   1 (*global*)      1 (*global*)      1 (*global*)      2 (GLIBC_2.0)  
+  13c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  140:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  144:   1 (*global*)      2 (GLIBC_2.0)     1 (*global*)      1 (*global*)   
+  148:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  14c:   1 (*global*)      1 (*global*)      2 (GLIBC_2.0)     2 (GLIBC_2.0)  
+  150:   1 (*global*)      3 (GLIBC_2.0)     1 (*global*)      1 (*global*)   
+  154:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  158:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  15c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  160:   1 (*global*)      1 (*global*)      2 (GLIBC_2.0)     1 (*global*)   
+  164:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  168:   1 (*global*)      1 (*global*)      1 (*global*)      2 (GLIBC_2.0)  
+  16c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  170:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  174:   2 (GLIBC_2.0)     1 (*global*)      1 (*global*)      1 (*global*)   
+  178:   1 (*global*)      2 (GLIBC_2.0)     1 (*global*)      1 (*global*)   
+  17c:   1 (*global*)      1 (*global*)      2 (GLIBC_2.0)     1 (*global*)   
+  180:   1 (*global*)      1 (*global*)      1 (*global*)      2 (GLIBC_2.0)  
+  184:   2 (GLIBC_2.0)     1 (*global*)      1 (*global*)      1 (*global*)   
+  188:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  18c:   1 (*global*)      2 (GLIBC_2.0)     1 (*global*)      1 (*global*)   
+  190:   1 (*global*)      2 (GLIBC_2.0)     1 (*global*)      1 (*global*)   
+  194:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  198:   2 (GLIBC_2.0)     1 (*global*)      1 (*global*)      1 (*global*)   
+  19c:   1 (*global*)      1 (*global*)      1 (*global*)      2 (GLIBC_2.0)  
+  1a0:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  1a4:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  1a8:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  1ac:   2 (GLIBC_2.0)     1 (*global*)      1 (*global*)      1 (*global*)   
+  1b0:   1 (*global*)      2 (GLIBC_2.0)     1 (*global*)      1 (*global*)   
+  1b4:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  1b8:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  1bc:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  1c0:   1 (*global*)      1 (*global*)      1 (*global*)      2 (GLIBC_2.0)  
+  1c4:   1 (*global*)      1 (*global*)      1 (*global*)      2 (GLIBC_2.0)  
+  1c8:   2 (GLIBC_2.0)     3 (GLIBC_2.0)     1 (*global*)      1 (*global*)   
+  1cc:   1 (*global*)      1 (*global*)      1 (*global*)      2 (GLIBC_2.0)  
+  1d0:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  1d4:   1 (*global*)      1 (*global*)      1 (*global*)      2 (GLIBC_2.0)  
+  1d8:   1 (*global*)      1 (*global*)      2 (GLIBC_2.0)     1 (*global*)   
+  1dc:   1 (*global*)      1 (*global*)      1 (*global*)      2 (GLIBC_2.0)  
+  1e0:   1 (*global*)      2 (GLIBC_2.0)     2 (GLIBC_2.0)     1 (*global*)   
+  1e4:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  1e8:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  1ec:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  1f0:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  1f4:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  1f8:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  1fc:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  200:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  204:   1 (*global*)      2 (GLIBC_2.0)     1 (*global*)      1 (*global*)   
+  208:   1 (*global*)      1 (*global*)      1 (*global*)      2 (GLIBC_2.0)  
+  20c:   1 (*global*)      1 (*global*)      2 (GLIBC_2.0)     1 (*global*)   
+  210:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  214:   1 (*global*)      1 (*global*)      1 (*global*)      2 (GLIBC_2.0)  
+  218:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  21c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  220:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  224:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  228:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  22c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  230:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  234:   1 (*global*)      1 (*global*)      2 (GLIBC_2.0)     1 (*global*)   
+  238:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  23c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  240:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  244:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  248:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  24c:   1 (*global*)      2 (GLIBC_2.0)     1 (*global*)      2 (GLIBC_2.0)  
+  250:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  254:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  258:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  25c:   2 (GLIBC_2.0)     1 (*global*)      2 (GLIBC_2.0)     1 (*global*)   
+  260:   1 (*global*)      2 (GLIBC_2.0)     1 (*global*)      1 (*global*)   
+  264:   2 (GLIBC_2.0)     1 (*global*)      1 (*global*)      1 (*global*)   
+  268:   1 (*global*)      1 (*global*)      1 (*global*)      3 (GLIBC_2.0)  
+  26c:   2 (GLIBC_2.0)     1 (*global*)      1 (*global*)      1 (*global*)   
+  270:   1 (*global*)      1 (*global*)      1 (*global*)      4 (GLIBC_2.1)  
+  274:   1 (*global*)      1 (*global*)      5 (GLIBC_2.3)     1 (*global*)   
+  278:   2 (GLIBC_2.0)     1 (*global*)      1 (*global*)      1 (*global*)   
+  27c:   1 (*global*)      2 (GLIBC_2.0)     1 (*global*)      1 (*global*)   
+  280:   2 (GLIBC_2.0)     1 (*global*)      1 (*global*)      1 (*global*)   
+  284:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  288:   1 (*global*)      1 (*global*)      2 (GLIBC_2.0)     2 (GLIBC_2.0)  
+  28c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  290:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  294:   1 (*global*)      2 (GLIBC_2.0)     1 (*global*)      2 (GLIBC_2.0)  
+  298:   2 (GLIBC_2.0)     1 (*global*)      2 (GLIBC_2.0)     1 (*global*)   
+  29c:   3 (GLIBC_2.0)     1 (*global*)      1 (*global*)      1 (*global*)   
+  2a0:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  2a4:   1 (*global*)      1 (*global*)      2 (GLIBC_2.0)     1 (*global*)   
+  2a8:   1 (*global*)      1 (*global*)      2 (GLIBC_2.0)     1 (*global*)   
+  2ac:   1 (*global*)      1 (*global*)      1 (*global*)      2 (GLIBC_2.0)  
+  2b0:   1 (*global*)      1 (*global*)      1 (*global*)      2 (GLIBC_2.0)  
+  2b4:   1 (*global*)      1 (*global*)      1 (*global*)      2 (GLIBC_2.0)  
+  2b8:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  2bc:   1 (*global*)      1 (*global*)      1 (*global*)      2 (GLIBC_2.0)  
+  2c0:   1 (*global*)      2 (GLIBC_2.0)     1 (*global*)      1 (*global*)   
+  2c4:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  2c8:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  2cc:   2 (GLIBC_2.0)     1 (*global*)      1 (*global*)      1 (*global*)   
+  2d0:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  2d4:   2 (GLIBC_2.0)     1 (*global*)      1 (*global*)      1 (*global*)   
+  2d8:   1 (*global*)      1 (*global*)      2 (GLIBC_2.0)     2 (GLIBC_2.0)  
+  2dc:   1 (*global*)      2 (GLIBC_2.0)     1 (*global*)      1 (*global*)   
+  2e0:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  2e4:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  2e8:   2 (GLIBC_2.0)     1 (*global*)      2 (GLIBC_2.0)     1 (*global*)   
+  2ec:   2 (GLIBC_2.0)     1 (*global*)      1 (*global*)      1 (*global*)   
+  2f0:   1 (*global*)      2 (GLIBC_2.0)     1 (*global*)      2 (GLIBC_2.0)  
+  2f4:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  2f8:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  2fc:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  300:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  304:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  308:   1 (*global*)      2 (GLIBC_2.0)     6 (GLIBC_2.2)     1 (*global*)   
+  30c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  310:   1 (*global*)      1 (*global*)      1 (*global*)      4 (GLIBC_2.1)  
+  314:   1 (*global*)      1 (*global*)      1 (*global*)      2 (GLIBC_2.0)  
+  318:   2 (GLIBC_2.0)     1 (*global*)      1 (*global*)      1 (*global*)   
+  31c:   1 (*global*)      1 (*global*)      1 (*global*)      2 (GLIBC_2.0)  
+  320:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  324:   1 (*global*)      1 (*global*)      1 (*global*)      2 (GLIBC_2.0)  
+  328:   1 (*global*)      1 (*global*)      2 (GLIBC_2.0)     1 (*global*)   
+  32c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  330:   2 (GLIBC_2.0)     1 (*global*)      1 (*global*)      1 (*global*)   
+  334:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  338:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  33c:   1 (*global*)      2 (GLIBC_2.0)     2 (GLIBC_2.0)     1 (*global*)   
+  340:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  344:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  348:   1 (*global*)      2 (GLIBC_2.0)     1 (*global*)      1 (*global*)   
+  34c:   1 (*global*)      2 (GLIBC_2.0)     1 (*global*)      1 (*global*)   
+  350:   0 (*local*)       5 (GLIBC_2.3)     1 (*global*)      1 (*global*)   
+  354:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  358:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  35c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  360:   1 (*global*)      1 (*global*)      2 (GLIBC_2.0)     2 (GLIBC_2.0)  
+  364:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  368:   2 (GLIBC_2.0)     1 (*global*)      3 (GLIBC_2.0)     1 (*global*)   
+  36c:   2 (GLIBC_2.0)     1 (*global*)      1 (*global*)      1 (*global*)   
+  370:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  374:   1 (*global*)      0 (*local*)       2 (GLIBC_2.0)  
+
+Version needs section '.gnu.version_r' contains 2 entries:
+ Addr: 0x0000000008050c54  Offset: 0x008c54  Link: 5 (.dynstr)
+  000000: Version: 1  File: libpthread.so.0  Cnt: 2
+  0x0010:   Name: GLIBC_2.2  Flags: none  Version: 6
+  0x0020:   Name: GLIBC_2.0  Flags: none  Version: 3
+  0x0030: Version: 1  File: libc.so.6  Cnt: 3
+  0x0040:   Name: GLIBC_2.3  Flags: none  Version: 5
+  0x0050:   Name: GLIBC_2.1  Flags: none  Version: 4
+  0x0060:   Name: GLIBC_2.0  Flags: none  Version: 2
+
+Displaying notes found at file offset 0x00000148 with length 0x00000020:
+  Owner                 Data size	Description
+  GNU                  0x00000010	NT_GNU_ABI_TAG (ABI version tag)
+    OS: Linux, ABI: 2.6.9
