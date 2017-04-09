@@ -1,0 +1,621 @@
+Usage: network [ command [ ... options ... ] ]
+Valid commands:
+    -c [ --connect ] <ip[:port]> [ ... connect options ... ]
+    -d [ --disconnect ]
+    --set-retries <integer>         : Description:
+                                        Number of times to retry a command
+                                        if valid responses are not received
+                                        within the timeout window.
+    --set-timeout <integer>         : Description:
+                                        Number of seconds to wait for a valid
+                                        response to be received.
+    --node <node>                   : Description:
+                                        Hexadecimal node number.
+    -r [ --rekey]                   : Description:
+                                        Rekeys the local client.
+Valid options for --rekey:
+    --pri <32-byte hex>             : Description:
+                                        New private key for local client.
+    --pub <32-byte hex>             : Description:
+                                        New public key for local client.
+Valid options for --connect:
+    --local-port <port>             : Description:
+                                        Source port to use for all outgoing
+                                        traffic.
+                                      Default:
+                                        System chosen
+    --response-src <ip[:port]>      : Description:
+                                        Force responses to originate from the
+                                        given network address and port.
+                                      Default:
+                                        Use the command's destination
+    --response-dst <ip[:port]>      : Description:
+                                        Force the response's destination to
+                                        be the given network address and port
+                                      Default:
+                                        Use the command's source
+    --node <node>                   : Description:
+                                        Hexadecimal node number.
+                                      Default:
+                                        The broadcast address.
+    --maxpad <integer>              : Description:
+                                        Maximum amount of random padding to use
+                                        in packets.
+                                      Default:
+                                        128 (lower than 64 is not recommended).
+Interface with the current network configuration. If no options are specified
+then the current network status and configuration is displayed.
+--rekey
+--set-retries
+--disconnect
+disconnected
+Status:             %s
+Node:               %08X
+Maximum Padding:    %d
+Retries:            %d
+Timeout:            %d (secs)
+Commands:
+  Remote address:   %s
+  Remote port:      
+random
+  Local port:       
+system default
+Responses:
+command dst
+  Src address:      %s
+  Src port:         
+command src
+  Dst address:      %s
+  Dst port:         
+--connect
+connected
+--set-timeout
+--node
+Usage: help [command]
+Valid options:
+    N/A
+Displays a list of all available commands or the detailed help message for
+the given command.
+Hint:
+    Try 'help <command>' for a detailed help message for any of the
+    available commands.
+Usage: quit or exit
+Close connections and exit.
+help
+Usage: %s -v [ --version ]
+       %s -h [ --help ]
+       %s [ ip[:port] ] [ ... options ... ]
+Valid options:
+    --local-port <port>             : Description:
+                                        Source port to use for all outgoing
+                                        traffic.
+                                      Default:
+                                        System chosen
+    --response-src <ip[:port]>      : Description:
+                                        Force responses to originate from the
+                                        given network address and port.
+                                      Default:
+                                        Use the command's destination
+    --response-dst <ip[:port]>      : Description:
+                                        Force the response's destination to
+                                        be the given network address and port
+                                      Default:
+                                        Use the command's source
+    --set-retries <integer>         : Description:
+                                        Number of times to retry a command
+                                        if valid responses are not received
+                                        within the timeout window.
+                                      Default:
+                                        %d
+    --set-timeout <integer>         : Description:
+                                        Number of seconds to wait for a valid
+                                        response to be received.
+                                      Default:
+                                        %d (secs)
+    --node <node>                   : Description:
+                                        Hexadecimal node number.
+                                      Default:
+                                        The broadcast address.
+    --maxpad <integer>              : Description:
+                                        Maximum amount of random padding to use
+                                        in packets.
+                                      Default:
+                                        128 (lower than 64 is not recommended).
+Start the interactive client program.
+If the optional ip[:port] parameter is not provided on the command line, then
+it must be set through a client command before any communication can occur.
+version
+help
+local-port
+response-src
+response-dst
+set-retries
+set-timeout
+node
+maxpad
+3.0.3.1
+%s %s
+List all available command:     'help'
+Interrupt a command:            Control-C
+Terminate this program:         'quit' or Control-D
+SD> 
+quit
+exit
+%a, %d %b %Y %H:%M:%S %z
+[FAILURE] (Error Code: %d)
+Not connected; try 'help network'
+[SUCCESS]
+Command option error; try 'help %s'
+Command '%s' unknown; try 'help'
+Release: %s %s ($Rev: 162 $)
+/dev/urandom
+Warning: Unable to use /dev/urandom for entropy.
+    Security will be adversely impacted.
+/boot/
+clearlog
+commit
+disable
+enable
+delete
+getinfo
+getlog
+getrule
+ping
+rule
+showrule
+sync
+uninstall
+rekey
+Available Commands:
+    %s
+Usage: ping
+Valid options:
+    N/A
+Verify connectivity.
+Usage: getinfo
+Valid options:
+    N/A
+Show status information.
+Version:           %08X
+Core Version:      %08X
+Node ID:           %08x
+Platform Type:     %08x
+Active Rules:      %d/%d
+Log Entries:       %d/%d
+Successful Cmds:   %d/%d
+cname
+null
+hinfo
+minfo
+aaaa
+axfr
+mailb
+maila
+srcaddr
+srcmask
+dstaddr
+dstmask
+protocol
+srcport
+dstport
+appnone
+apphttp
+appdns
+regexfile
+regex
+injectfile
+inject
+interval
+window
+matches
+interact-normal
+interact-normal-block
+interact-normal-skip
+interact-ignore
+interact-ignore-block
+interact-ignore-skip
+tcpflag
+nolog
+appqs
+qskeyfile
+qskey
+qsmaxpad
+runtime
+Usage: rule <rule number> [ ... options ... ]
+Valid options:
+    --srcaddr <ip address>          : Default:
+                                        any (0.0.0.0 IPv4, :: IPv6)
+    --srcmask <mask>                : Description:
+                                        Formatted as xxx.xxx.xxx.xxx (IPv4 only)
+                                        or CIDR value (IPv4 and IPv6).
+                                        Interpretation is based on --srcaddr's
+                                        IP version.
+                                      Default:
+                                        If --srcaddr is:
+                                            IPv4: 255.255.255.255 (or 32)
+                                            IPv6: 128
+                                            Not set: 0.0.0.0 (IPv4) or 0 (IPv6)
+    --dstaddr <ip address>          : Default:
+                                        any (0.0.0.0 IPv4, :: IPv6)
+    --dstmask <mask>                : Description:
+                                        Formatted as xxx.xxx.xxx.xxx (IPv4 only)
+                                        or CIDR value (IPv4 and IPv6).
+                                        Interpretation is based on --dstaddr's
+                                        IP version.
+                                      Default:
+                                        If --dstaddr is:
+                                            IPv4: 255.255.255.255 (or 32)
+                                            IPv6: 128
+                                            Not set: 0.0.0.0 (IPv4) or 0 (IPv6)
+    --protocol <integer>            : Default:
+                                        6 (TCP)
+    --srcport <integer>             : Default:
+                                        0 (any)
+    --dstport <integer>             : Default:
+                                        0 (any)
+    --appnone=[string]              : Default:
+        or --apphttp                  --appnone
+        or --appdns[=string]
+        or --appqs[=string]           --appnone Options:
+                                        reverse | forward
+                                      Default:
+                                        reverse
+                                      --appdns Options:
+                                        a     | axfr | cname | hinfo | maila |
+                                        mailb | mb   | md    | mf    | mg    |
+                                        minfo | mr   | mx    | ns    | null  |
+                                        ptr   | soa  | txt   | wks
+                                      Default:
+                                        a
+                                      --appqs Options:
+                                        s | r | sr   (s = shoot, r = respond)
+                                      Default:
+                                        neither
+    --matches <integer>             : Description:
+                                        Total number of matches to perform
+                                        within the window period. 0
+                                        indicates infinite matches.
+                                      Default:
+                                        5
+    --window <integer>              : Description:
+                                        Window period duration in seconds. 0
+                                        indicates an infinite window.
+                                      Default:
+                                        0
+    --interval <integer>            : Description:
+                                        Minimum time between subsequent matches
+                                        in seconds.
+                                      Default:
+                                        60
+    --runtime <integer>             : Description:
+                                        Maximum length of time to run after
+                                        being enabled in seconds. 0 indicates
+                                        infinite time.
+                                      Default:
+                                        0
+    --regexfile <path>              : Default:
+        or --regex <string>             not set
+    --injectfile <path>             : Default:
+        or --inject <string>            not set
+    --interact-normal               : Description:
+        or --interact-normal-block      Control the interaction between
+        or --interact-normal-skip       multiple rules. Please reference
+        or --interact-ignore            the offline documentation for more
+        or --interact-ignore-block      information.
+        or --interact-ignore-skip     Default:
+                                        --interact-normal
+    --tcpflag <string>              : Options:
+                                        fin | syn | rst | psh | ack | urg | none
+                                      Default:
+                                        fin ack psh
+                                      Note:
+                                        To set multiple flags this option
+                                        should be specified multiple times.
+    --nolog                         : Default:
+                                        not set
+    --qskeyfile <path>              : Default:
+        or --qskey <32-byte hex>        not set
+    --qsmaxpad <integer>            : Default:
+                                        128 (lower than 64 is not recommended)
+Create or update rule <rule number> with the properties described by
+[ ... options ... ].
+If an option is not provided the listed defaults will be used.
+Rule Notice: Stripping CR/LF from end of string
+DNS type unknown
+Rule Error: %s
+Rule number needed
+--qskey[file] and --qsmaxpad are only valid with --appqs
+--tcpflag invalid with this rule type
+--regex[file] and --inject[file] are invalid with this application type
+--nolog can not be used with --appqs
+--qskey[file] must be provided
+--regex[file] and --inject[file] combined length is too long
+IPv4 and IPv6 addresses may not be mixed
+--nolog can not be used when injecting
+Bad values for --qskey[file]
+IPv4 CIDR values can not be greater than 32
+Source mask invalid
+Destination mask invalid
+icmpv6
+icmp
+icmpv4
+Source port invalid
+Destination port invalid
+reverse
+forward
+Injection in file is invalid
+Protocol invalid
+--regex[file] and --inject[file] are invalid with --appqs
+Rule number invalid
+Source address invalid
+Regular expression in file is invalid
+QS key on command line is invalid
+QS key in file is invalid
+Regular expression on command line is too long
+Destination address invalid
+qsmaxpad value is invalid
+Injection on command line is invalid
+Run time is invalid
+Window size is invalid
+Minimum interval is invalid
+Maximum number of injections invalid
+Regular expression in file is too long
+No-application option invalid
+none
+TCP Flag unknown
+Automatically synchronizing...
+sync
+Synchronize success
+Timed out waiting for response.
+Synchronize failed
+Internal error: unable to receive data.
+Internal error: unable to send data.
+begin
+Usage: delete [ ... options ... ]
+Valid options:
+    <rule number>
+     | -a [ --all ]
+     | -b [ --begin ] <rule number>  -e [ --end ] <rule number>
+Delete a single rule, all rules, or an inclusive range of rules.
+--begin
+--end
+--all
+Usage: fin
+Valid options:
+    N/A
+Clear session key data.
+begin
+Usage: disable [ ... options ... ]
+Valid options:
+    <rule number>
+     | -a [ --all ]
+     | -b [ --begin ] <rule number>  -e [ --end ] <rule number>
+Disable a single rule, all rules, or an inclusive range of rules.
+--begin
+--end
+--all
+Usage: commit
+Valid options:
+    N/A
+Store all currently configured rules so that they will be automatically
+reloaded on any subsequent execution.
+Unknown Format:    %d
+Using CORE:         %s
+Resize/Create Pkts: %s
+Distributed:        %s
+Tipping Available:  %s
+IPv4 Available:     %s
+IPv6 Available:     %s
+Uptime (D:H:M:S):   %d:%02d:%02d:%02d
+PBD Node Number:    Unknown
+Unknown Flags:      0x%08x
+Uptime (D:H:M:S):   Unknown
+PBD Node Number:    0x%08x
+FIRE
+Using:              %s
+Usage: rekey
+Valid options:
+    --pub <32-byte hex>                      : Local public key
+    --pri <32-byte hex>                      : Remote private key
+Force rekeying of the remote endpoint with the provided keys.
+--pub
+--pri
+BPF:               %s
+Interface Regex:   %s
+N/A?
+Active Interfaces: %s
+Displayed CPU:         %d
+Actual CPU :           %d
+Actual Thread CPU:     %d
+XXX:                   %d
+Preprocess:            %d 
+ Preprocess Fail:      %d 
+Core Process:          %d 
+ Core Process Fail:    %d 
+Log only:              %d 
+Injected:              %d 
+Core forward as is:    %d 
+Need forwarding:       %d 
+Pkts Untouched:        %d 
+Pkts Forwarded:        %d 
+--- Thread ---
+Cmd buffer:            %d 
+ Cmd buffer full:      %d 
+ Cmd queued:           %d 
+ Cmd dropped:          %d 
+PBD buffer:            %d 
+ PBD buffer full:      %d 
+ PBD queued:           %d 
+ PBD dropped:          %d 
+ PBD Max Queue depth:  %d/%d (%d %%)
+QoS buffer:            %d 
+ QoS buffer full:      %d 
+ QoS queued:           %d 
+ QoS dropped:          %d 
+ QoS Max Queue depth:  %d/%d (%d %%)
+--------------
+Filter Error           0x%08x 
+Y@all
+begin
+Usage: enable [ ... options ... ]
+Valid options:
+    <rule number>
+     or -a [ --all ]
+     or -b [ --begin ] <rule number>  -e [ --end ] <rule number>
+Enable a single rule, all rules, or an inclusive range of rules.
+--begin
+--end
+--all
+Usage: uninstall
+Valid options:
+    N/A
+Force termination.
+begin
+enabled-only
+disabled-only
+summary
+Usage: showrule or getrule [ ... options ... ]
+Valid options:
+    <rule number>
+     or -a [ --all ]
+     or -b [ --begin ] <rule number>
+     or -e [ --end ] <rule number>
+    -n [ --hide-enabled ]
+    -d [ --hide-disabled ]
+    -s [ --summary ]
+Displays rules according to the given options. If no options are provided
+then all enabled rules will be displayed in non-summary format.
+HTTP
+Unknown
+NOAPP
+%-3d 
+%-5s 
+%-45.45s/%3d 
+%-5d
+    %-3d 
+%-5d 
+%-5d
+%-3d --- UNDEFINED ---
+#   E I App   Source IP      / Mask                             SPort
+=== = = ===== ================================================= =====
+    P   Hits  Destination IP / Mask                             DPort
+    === ===== ================================================= =====
+Normal, skipped
+Ignoring, blocking
+Ignoring
+Normal
+Normal, blocking
+Ignoring, skipped
+TCP Flags:          
+NONE
+FIN 
+SYN 
+RST 
+PSH 
+ACK 
+URG 
+ab:e:nds
+Rule:               %d
+Uploaded Time:      %d (secs)
+Enabled?:           %s
+Enabled Time:       %d (secs)
+Src IP/Mask:        %s/%d
+Dst IP/Mask:        %s/%d
+Protocol:           %d
+Src Port:           %d
+Dst Port:           %d
+Application:        %s
+Minimum Interval:   %d (secs)
+Window Size:        %d (secs)
+Maximum Runtime:    %d (secs)
+Maximum Matches:    %d
+Window Ends:        %d (secs)
+Runtime Remaining:  N/A
+Next Match:         %d (secs)
+Window Matches:     %d
+Total Matches:      %d
+Misses:             %d
+Runtime Remaining:  %d (secs)
+Rule:               %d (UNDEFINED)
+Shoot?:             %s
+Respond?:           %s
+Log?:               yes
+Key (hex):          
+Max packet padding: %d
+Next Request Num:   %d
+Interaction:        %s
+Regex:              %s
+Injection Length:   %d
+Injection:          %s
+Log?:               %s
+Injection:          N/A
+Forward
+Reverse
+Direction:          %s
+NULL
+CNAME
+DNS Type:           %s
+Injection:          Binary data
+HINFO
+MINFO
+AXFR
+AAAA
+MAILB
+MAILA
+Usage: sync
+Valid options:
+    N/A
+Force protocol resynchronization.
+begin
+logfile
+teefile
+nodata
+hexdata
+Usage: getlog [ ... options ... ] [ <entry number> ]
+Valid options:
+    -b [ --begin ] <entry number>   : Index of the first entry to retrieve.
+    -e [ --end ] <entry number>     : Index of the last entry to retrieve.
+    -o [ --logfile ] <path>         : Redirect output to a file with the
+                                      given path. A timestamp will be
+                                      appended to the given file name. No
+                                      log entries will be written to the
+                                      screen.
+    -t [ --teefile ] <path>         : Redirect output to a file with the
+                                      given path in addition to the screen.
+                                      A timestamp will be appended to the
+                                      given file name.
+    -n [ --nodata ]                 : Do not display the data field of the
+                                      log.
+    -x [ --hexdata ]                : Display the data field of the log as
+                                      hexadecimal.
+    -m [ --max ]                    : Request the maximum number of logs per
+                                      packet instead of a high random number.
+If '--begin' and '--end' are specified only log entries in the inclusive
+range are shown. If only '--begin' is specified or if a non-option
+<entry number> is given then entries from that index until the end of the
+log are shown. If only '--end' is specified then entries from the beginning
+of the log until that index will be shown.
+By default the log's data field will be displayed in string representation.
+This can be supressed through the '--nodata' option or changed to hexadecimal
+representation through the '--hexdata' option.
+--Application Specific Data--
+NOAPP: Payload Bytes
+HTTP:  Payload Bytes
+DNS:   Payload Bytes
+QS:    UUID, Request Number, Shot Result, Response Result
+--General Header--
+#     R  App   Age        P   SPort DPort Source IP       Destination IP
+===== == ===== ========== === ===== ===== =============== ===============
+?????
+%-5d %-2d %-5.5s %4d:%02d:%02d %-3s %-5s %-5s %-15s %-15s
+NOAPP
+%-5d %-2d %-5.5s %4d:%02d:%02d %-3d %-5d %-5d %-15s %-15s
+HTTP
+GET 
+%02x%02x%02x%02x-%02x%02x-%02x%02x-%02x%02x-%02x%02x%02x%02x%02x%02x %-8u %-8u %-8u
+b:e:o:t:nxm
+%s_%04d%02d%02d_%02d%02d%02d
+Wrote log file: %s
+Usage: clearlog
+Valid options:
+    N/A
