@@ -1,0 +1,366 @@
+{Pulled from binary, as strings}
+
+
+Usage: channel [ ... options ... ]
+Valid options:
+-r [ --resync ] : Force the client to send a new
+synchronization packet to the remote.
+-d [ --disconnect ] : Disconnect the current communication
+channel.
+-c [ --connect ] ip[:port] [ ... options ... ]
+: Establish a communication channel to a
+remote at the given address and optional
+port with the given additional options.
+Options for --connect:
+--local-port port : Use the given port for all outgoing
+packets. Default: random (system
+chosen).
+--response-src ip[:port] : Configure the remote to send response
+packets as if they are originating from
+the given network address. Default: use
+the command packet destination address
+as the source address for the response.
+--response-dst ip[:port] : Configure the remote to send response
+packets to the given network address.
+Default: use the command packet source
+address as the destination address for
+the response.
+Provides an interface to the client-remote communication channel. With no
+options, displays the current status of the communication channel.
+The option '--resync' clears the channel's synchronization state forcing
+synchronization to be reestablished automatically on the next command. This
+is useful in the case that the remote has been restarted but this client has
+not, or to restore synchronization in the case that another client has
+connected to the remote and "stolen" synchronization.
+The option '--disconnect' will disconnect the current communication channel.
+The option '--connect' will create a new communication channel to a remote at
+the given address and optional port. Note: the current communication
+channel must be disconnected before a new connection can be established.
+Failed to create communication channel.
+disconnected
+Communication channel: %s
+Commands:
+Remote address: %s
+Remote port:
+Local port:
+system chosen
+Responses:
+command destination address
+Source address: %s
+Source port:
+command destination port
+command source address
+Destination address: %s
+Destination port:
+command source port
+connected
+--connect
+random
+--resync
+--disconnect
+Usage: rulewizard [ <rule number> ]
+Valid options:
+N/A
+Steps through creation of a new rule by asking a series of questions the
+answers to which describe the behavior of the desired rule. If a rule number
+is not provided (or if the provided rule number is invalid), this will be
+prompted for as well. Once all questions have been answered, an attempt will
+be made to set the rule.
+Control-D will terminate the wizard.
+=============================================
+NOTE: Control-D will terminate this wizard.
+=============================================
+Source IP Address (default 'any'):
+Destination IP Address (default 'any'):
+Destination IP Mask (default 255.255.255.255):
+255.255.255.255
+Protocol number (TCP: %d, UDP: %d, default %d):
+Source port ('0' implies 'any', default 'any'):
+Destination port ('0' implies 'any', default 'any'):
+Application filtering ('http', 'dns', or 'none', default 'http'):
+Custom regular expression ('y[es]' or 'n[o]', default 'yes'):
+Inject ('y[es]' or 'n[o]', default 'yes'):
+Set FIN flag ('y[es]' or 'n[o]', default 'no'):
+Source IP Mask (default 255.255.255.255):
+Rule number:
+DNS type ('a', 'ptr', or 'mx', default 'a'):
+Regular expression from file ('y[es]' or 'n[o]', default 'yes'):
+Regular expression:
+Set URG flag ('y[es]' or 'n[o]', default 'no'):
+Set ACK flag ('y[es]' or 'n[o]', default 'no'):
+Set PSH flag ('y[es]' or 'n[o]', default 'no'):
+Set RST flag ('y[es]' or 'n[o]', default 'no'):
+Set SYN flag ('y[es]' or 'n[o]', default 'no'):
+Injection data from file ('y[es]' or 'n[o]', default 'yes'):
+Minimum interval (seconds) between injections (default 60):
+Maximum injections per window (default 5):
+Set TCP flags ('y[es]' or 'n[o]', default 'no'):
+Regular expression file:
+Injection file:
+Injection data:
+Injection window (seconds) (default 0):
+Usage: quit or exit
+Close connections and exit the interactive client.
+channel
+rulewizard
+Usage: help [command]
+Valid options:
+N/A
+When no command is given, displays a list of all available commands. When a
+command is given, displays the detailed help message for that command. If
+the given command does not exist the list of available commands will be
+displayed.
+Try 'help <command>' for a detailed help message for any of the
+available commands.
+Usage: %s -v [ --version ]
+%s -h [ --help ]
+%s [ ip[:port] ] [ ... options ... ]
+Valid options:
+--local-port port : Use the given port for all outgoing
+packets. Default: system chosen.
+--response-src ip[:port] : Configure the remote to send response
+packets as if they are originating from
+the given network address. Default: use
+the command packet destination address
+as the source address for the response.
+--response-dst ip[:port] : Configure the remote to send resopnse
+packets to the given network address.
+Default: use the command packet source
+address as the destination address for
+the response.
+Start the interactive client. If the optional ip[:port] parameter is not
+given on the command line, then it must be set through a client command
+before any communication can occur.
+version
+local-port
+response-src
+response-dst
+1.0.0.1
+List all available command: 'help'
+Interrupt a command: Control-C
+Terminate this program: 'quit' or Control-D
+SDCLIENT>
+%a, %d %b %Y %H:%M:%S %z
+SUCCESS
+FAILURE
+Command '%s' unknown; try 'help'
+Command option error; try 'help %s'
+Release: %s %s
+$Revision: 631 $
+Failed to send data.
+Retrying...
+Timed out waiting for response.
+Malformed response.
+Failed to receive data.
+Host communication error.
+_initcounter
+clearlog
+commit
+disable
+enable
+getinfo
+getlog
+getrule
+showrule
+uninstall
+_initcounter
+Available Commands:
+%s
+Usage: uninstall
+Valid options:
+N/A
+Unload the remote.
+Usage: commit
+Valid options:
+N/A
+Persistantly store all configured rules to the remote.
+enabled-only
+disabled-only
+summary
+Usage: showrule or getrule [ ... options ... ]
+Valid options:
+<rule number> : Control which rules rules are displayed:
+| -a [ --all ] individual, all, or a range. Setting
+| -b [ --begin ] <rule number> '--begin' or '--end' alone will force
+| -e [ --end ] <rule number> the opposite end of the range to the
+last or first index respectively.
+-n [ --hide-enabled ] : Do not display enabled rules
+-d [ --hide-disabled ] : Do not display disabled rules
+-s [ --summary ] : Display rules in summary format
+Displays remote rules according to the given options. If no options are
+provided then all enabled rules will be displayed in the long (non-summary)
+format.
+ab:e:nds
+Rule: %d
+Enabled?: %s
+Src IP/Mask: %s/
+Dst IP/Mask: %s/
+Protocol: %s
+Src Port: %d
+Dst Port: %d
+Application: %s
+Custom Regex: %s
+N/A, Log Only
+Injection: %s
+Min Interval: %d (secs)
+Inject Window: %d (secs)
+Max Injects: %d
+Curr Injects: %d
+Total Injects: %d
+Next Inject: %d (secs)
+Window Ends: %d (secs)
+Src. Dest. Next Total
+Rule Enabled Source IP Source Netmask Dest. IP Dest. Netmask Port Port Proto Inject Injects
+==== ======= =============== =============== =============== =============== ===== ===== ===== ====== =======
+%-4d %-7s %-15.15s %-15.15s %-15.15s %-15.15s %-5d %-5d %-5s %-6d %-7d
+TCP Flags:
+%-4d --- UNDEFINED ---
+Rule: %d (UNDEFINED)
+Usage: getinfo
+Valid options:
+N/A
+Returns generic information regarding the remote.
+Version: %08X
+Log Entries: %d
+Active Rules: %d
+Pcap Filter: %s
+Interface Regex: %s
+Active Interfaces: %s
+Usage: enable [ ... options ... ]
+Valid options:
+<rule number> : Enable single rule only
+| -a [ --all ] : Enable all configured rules
+| -b [ --begin ] <rule number> -e [ --end ] <rule number>
+: Enable configured rules within range
+Enables remote rule(s) according to the given options.
+--begin
+Usage: ping
+Valid options:
+N/A
+Returns the connectivity status of the remote.
+srcaddr
+srcmask
+dstaddr
+dstmask
+protocol
+srcport
+dstport
+checkhttp
+checkdns
+noappcheck
+nocheckhttp
+dnstype
+checkregex
+nocheckregex
+regexfile
+inject
+noinject
+injectfile
+mininterval
+injectwindow
+maxinjections
+tcpflag
+Usage: rule <rule number> [ ... options ... ]
+Valid options:
+--srcaddr <xxx.xxx.xxx.xxx> : Source IP address
+(default: 0.0.0.0)
+--srcmask <xxx.xxx.xxx.xxx> : Source netmask
+(default: 255.255.255.255 if --srcaddr
+is set, 0.0.0.0 if --srcaddr is not set)
+--dstaddr <xxx.xxx.xxx.xxx> : Destination IP address
+(default: 0.0.0.0)
+--dstmask <xxx.xxx.xxx.xxx> : Destination netmask
+(default: 255.255.255.255 if --dstaddr
+is set, 0.0.0.0 if --dstaddr is not set)
+--protocol <protocol> : Matching link layer protocol
+(default: 6/TCP)
+--srcport <port number> : Source port number
+(default: 0/any)
+--dstport <port number> : Destination port number
+(default: 0/any)
+--checkhttp : Select an application layer specific
+or --checkdns filtering mechanism
+or --noappcheck (default: --checkhttp)
+--checkhttp : Application layer filtering selection
+or --nocheckhttp in pre-DNS enabled remotes
+(default: --checkhttp)
+Note: for DNS enabled remotes
+--nocheckhttp has the same effect as
+--noappcheck
+--dnstype <dns type> : DNS type based filtering
+Options: a | ptr | mx
+(default: a)
+--checkregex[=regex] : Enable/disable regular expression based
+or --nocheckregex filtering
+(default: --checkregex)
+Note: if --checkregex is specified then
+a regular expression must be given
+as an argument to this option or
+through --regexfile
+--regexfile <file name> : Text file containing regular expression
+--inject[=injection] : Enable/disable packet injection
+or --noinject (default: --inject)
+Note: if --inject is specified then an
+injection must be given as an argument
+to this option or through --injectfile
+--injectfile <file name> : Text/binary file containing injection
+data
+--mininterval <seconds> : Minimum interval between injections,
+must be >= 60
+(default: 60)
+--injectwindow <seconds> : Injection window duration
+(default: 0)
+--maxinjections <injections> : Maximum number of injections to perform
+per injection window
+(default: 5)
+--tcpflag <tcp flag> : Enable/disable flags during TCP injection
+Options: FIN SYN RST PSH ACK URG NONE
+Multiple occurrences of this option will
+be logically ORed together with the
+exception of NONE which represents no
+flags
+(default: FIN ACK PSH)
+Update packet filtering rule <rule number>, or create packet filter rule
+<rule number> if it does not exist with the properties described by
+[ ... options ... ]. If an option is not given the defaults listed above
+will be used. However, if <rule number>, '--regexfile <file name>' (if
+'--checkregex' is specified), or '--injectfile <file name>' (if '--inject' is
+specified) are not given the update will fail.
+255.255.255.255
+Usage: disable [ ... options ... ]
+Valid options:
+<rule number> : Disable single rule only
+| -a [ --all ] : Disable all rules
+| -b [ --begin ] <rule number> -e [ --end ] <rule number>
+: Disable rules within range
+Disables remote rule(s) according to the given options.
+--begin
+logfile
+showdata
+showhex
+Usage: getlog [ ... options ... ] [ <entry number> ]
+Valid options:
+-b [ --begin ] <entry number> : First log entry to display
+-e [ --end ] <entry number> : Last log entry to display
+-o [ --logfile ] <log file> : Redirect output to <log file>
+-d [ --showdata ] : Display log data as human readable
+-x [ --showhex ] : Display log data as hexadecimal
+Displays the contents of the remote log. If '--begin' and '--end' are
+specified output all log entries in that range. If only '--begin' is specified
+(or if a non-option <entry_number> is given) output log entries from that index
+to the end of the log. If only '--end' is specified output log entries from
+the beginning of the log to that index.
+The option '--logfile' allows specification of the file name to redirect the
+log contents to rather than the standard output. '--showdata' or '--showhex'
+will output a portion of the packet that triggered the rule in an ascii or
+hexadecimal format respectively.
+b:e:o:dx
+%s_%04d%02d%02d_%02d%02d%02d
+Log Source Destination Proto Age (s) Rule
+==== ===================== ===================== ===== ======== ====
+%15.15s:%-5d
+Usage: clearlog
+Valid options:
+N/A
+Clears all log entries currently recorded on the remote. Note: All rules
+must be disabled before attempting to clear the logs.
