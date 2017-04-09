@@ -1,0 +1,97 @@
+MD5					c8d2fbac602fa261aa58276a2fd1c1d9
+SHA256				d687aa644095c81b53a69c206eb8d6bdfe429d7adc2a57d87baf8ff8d4233511
+SHA1				c1dce6e5f5755a0c1d2a24ac076e3f8af424a205
+File Name			seconddate_ImplantStandalone_3.0.3.2_remote_x86_64-linux
+File Type			ELF 64-bit LSB executable, x86-64, version 1 (SYSV), for GNU/Linux 2.4.1, dynamically linked (uses shared libs), stripped
+Analysis Date/Time	2017-04-09T05:56:55.795954
+CPU Platform		X86-64
+
+ELF Header:
+  Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF64
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              EXEC (Executable file)
+  Machine:                           Advanced Micro Devices X86-64
+  Version:                           0x1
+  Entry point address:               0x401dc0
+  Start of program headers:          64 (bytes into file)
+  Start of section headers:          0 (bytes into file)
+  Flags:                             0x0
+  Size of this header:               64 (bytes)
+  Size of program headers:           56 (bytes)
+  Number of program headers:         8
+  Size of section headers:           64 (bytes)
+  Number of section headers:         0
+  Section header string table index: 0
+
+There are no sections in this file.
+
+There are no sections to group in this file.
+
+Program Headers:
+  Type           Offset             VirtAddr           PhysAddr
+                 FileSiz            MemSiz              Flags  Align
+  PHDR           0x0000000000000040 0x0000000000400040 0x0000000000400040
+                 0x00000000000001c0 0x00000000000001c0  R E    8
+  INTERP         0x0000000000000200 0x0000000000400200 0x0000000000400200
+                 0x000000000000001c 0x000000000000001c  R      1
+      [Requesting program interpreter: /lib64/ld-linux-x86-64.so.2]
+  LOAD           0x0000000000000000 0x0000000000400000 0x0000000000400000
+                 0x000000000004bf74 0x000000000004bf74  R E    200000
+  LOAD           0x000000000004c000 0x000000000064c000 0x000000000064c000
+                 0x0000000000010d11 0x0000000000012148  RW     200000
+  DYNAMIC        0x000000000004c028 0x000000000064c028 0x000000000064c028
+                 0x0000000000000190 0x0000000000000190  RW     8
+  NOTE           0x000000000000021c 0x000000000040021c 0x000000000040021c
+                 0x0000000000000038 0x0000000000000038  R      4
+  GNU_EH_FRAME   0x0000000000045540 0x0000000000445540 0x0000000000445540
+                 0x000000000000124c 0x000000000000124c  R      4
+  GNU_STACK      0x0000000000000000 0x0000000000000000 0x0000000000000000
+                 0x0000000000000000 0x0000000000000000  RW     8
+
+Dynamic section at offset 0x4c028 contains 20 entries:
+  Tag        Type                         Name/Value
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]
+ 0x000000000000000c (INIT)               0x401888
+ 0x000000000000000d (FINI)               0x432e48
+ 0x0000000000000004 (HASH)               0x400258
+ 0x0000000000000005 (STRTAB)             0x400cd8
+ 0x0000000000000006 (SYMTAB)             0x4004c8
+ 0x000000000000000a (STRSZ)              731 (bytes)
+ 0x000000000000000b (SYMENT)             24 (bytes)
+ 0x0000000000000015 (DEBUG)              0x0
+ 0x0000000000000003 (PLTGOT)             0x64c1c8
+ 0x0000000000000002 (PLTRELSZ)           1944 (bytes)
+ 0x0000000000000014 (PLTREL)             RELA
+ 0x0000000000000017 (JMPREL)             0x4010f0
+ 0x0000000000000007 (RELA)               0x401090
+ 0x0000000000000008 (RELASZ)             96 (bytes)
+ 0x0000000000000009 (RELAENT)            24 (bytes)
+ 0x000000006ffffffe (VERNEED)            0x401060
+ 0x000000006fffffff (VERNEEDNUM)         1
+ 0x000000006ffffff0 (VERSYM)             0x400fb4
+ 0x0000000000000000 (NULL)               0x0
+
+There are no relocations in this file.
+
+The decoding of unwind sections for machine type Advanced Micro Devices X86-64 is not currently supported.
+
+Dynamic symbol information is not available for displaying symbols.
+
+Histogram for bucket list length (total of 67 buckets):
+ Length  Number     % of total  Coverage
+      0  35         ( 52.2%)
+      1  22         ( 32.8%)     50.0%
+      2  8          ( 11.9%)     86.4%
+      3  2          (  3.0%)    100.0%
+
+No version information found in this file.
+
+Displaying notes found at file offset 0x0000021c with length 0x00000038:
+  Owner                 Data size	Description
+  GNU                  0x00000010	NT_GNU_ABI_TAG (ABI version tag)
+    OS: Linux, ABI: 2.4.1
+  SuSE                 0x00000002	NT_VERSION (version)
